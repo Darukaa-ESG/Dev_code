@@ -1,0 +1,37 @@
+// shades of gray
+$white: #ffffff;
+$gray-100: #FBFBFB;
+$gray-200: #D9D9D9;
+$gray-300: #e8e8e8;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #606979;
+$gray-900: #323B50;
+$black:    #000;
+
+// $primary: $gray-900;
+$primary: #4968A7;
+$golden: #B6AB9C;
+$green: #45987A;
+
+//fontsize
+
+$centuryGothic: 'Century Gothic';
+$subHeaderHeight: 128px;
+
+$font-size-base: 1rem;
+$font-size-xxl: $font-size-base * 1.25;
+$font-size-lg: $font-size-base * 1.125;
+$font-size-md: $font-size-base * 1;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-xs: $font-size-base * 0.813; // 13px
+$badge-font-size: $font-size-base * 0.75; // 12px
+
+$h1-font-size: $font-size-base * 2.375;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;

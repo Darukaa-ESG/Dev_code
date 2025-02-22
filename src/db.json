@@ -1,0 +1,3944 @@
+{
+  "ProjectData": [
+    {
+      "projectName": "Mangrove Plantation Initiative in Sundarbans, India",
+      "projectType": "Under development",
+      "projectCountry": "India",
+      "projectRegistry": "Verra"
+    }
+  ],
+  "registryNamesArray": [
+    {
+      "value": 1,
+      "label": "Verra"
+    },
+    {
+      "value": 2,
+      "label": "Terrasos"
+    },
+    {
+      "value": 3,
+      "label": "Plan Vivo"
+    },
+    {
+      "value": 4,
+      "label": "Glod Standard"
+    }
+  ],
+  "CountryNamesArray": [
+    {
+      "value": 1,
+      "label": "India"
+    }
+  ],
+  "ProjectTypeArray": [
+    {
+      "value": 1,
+      "label": "Under development"
+    }
+  ],
+  "ProjectNamesArray": [
+    {
+      "value": 1,
+      "label": "Mangrove Plantation Initiative in Sundarbans, India"
+    }
+  ],
+  "ProjectList": [
+    {
+      "project_name": "Mangrove Plantation Initiative in Sundarbans, India",
+      "project_id": "N/A",
+      "project_start_date": "01-01-2024",
+      "project_end_date": "31-12-2044",
+      "project_status": "Under development",
+      "country": "India",
+      "project_description": "The Sundarbans Mangrove Forest, recognized as a UNESCO World Heritage Site, is the world's largest coastal mangrove ecosystem, spanning approximately 10,000 square kilometers across parts of India. This unique ecosystem plays a critical role in climate regulation, coastal protection, and carbon sequestration, while supporting an incredible diversity of flora and fauna. It is home to endangered species such as the Bengal tiger, estuarine crocodiles, and numerous bird species, making it a biodiversity hotspot.  This project focuses on restoring degraded areas within the Sundarbans Mangrove Forest, with activities aimed at enhancing the resilience and biodiversity of the ecosystem. Restoration efforts will include planting mangrove species, rehabilitating damaged habitats, and improving the natural regeneration of the forest. These activities will contribute to increasing the carbon sequestration potential of the area, further strengthening its role in mitigating climate change.In addition to Restoration, the project will engage local communities in sustainable mangrove management practices, ensuring long-term benefits for both the environment and the people who depend on the forest for their livelihoods.",
+      "project_type": "ARR/WRC",
+      "total_area": "567 ha",
+      "number_of_sites": "6",
+      "image_2010": "path_to_img",
+      "image_2015": "path_to_img",
+      "project_developer": "South Asian Forum of Environment",
+      "crediting_period": "20 years",
+      "image_2020": "path_to_img_3",
+      "image_2024": "path_to_img_4",
+      "emission_reduction_unit": "tCO2e",
+      "total_emission_reduction_over_crediting_period": "259305.1",
+      "avg_annual_emission_reduction": "12965.2",
+      "sdg": [
+        "sdg1.png",
+        "sdg2.png",
+        "sdg5.png",
+        "sdg8.png",
+        "sdg13.png",
+        "sdg14.png",
+        "sdg15.png"
+      ],
+      "registry": "Verra",
+      "gallery": [
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0163_1732088386129.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0164_1732088388265.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0168.DNG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0195.DNG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0216.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0218.DNG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0218.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1316.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1318.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1341.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1351.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1352.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1358.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1364.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1366.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1369.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1374.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1388.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1398.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1403.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1411.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1412.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1441.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1457.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1560.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1592.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1596.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1651.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1659.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1671.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1672.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1683.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1687.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1695.JPG"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/IMG_1787.JPG"
+        },
+        {
+          "name": "audio",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/MVI_1605.MP4"
+        },
+        {
+          "name": "image",
+          "url": "https://projectoverviewgallary.s3.eu-north-1.amazonaws.com/Sundarban_pics/DJI_0182_1732088418079.MP4"
+        }
+      ]
+    },
+    {
+      "project_name": "Nilgiri Biosphere Reserve, India",
+      "project_id": "N/A",
+      "project_start_date": "02-04-2024",
+      "project_end_date": "04-11-2044",
+      "project_status": "Registered",
+      "country": "India",
+      "project_description": "It is an International Biosphere Reserve in the Western Ghats in the Nilgiri Hill Ranges and was included in the UNESCO World Heritage sites in 2012.",
+      "project_type": "ARR/WRC",
+      "total_area": "567 ha",
+      "number_of_sites": "6",
+      "image_2010": "path_to_img",
+      "image_2015": "path_to_img",
+      "project_developer": "South Asian Forum of Environment",
+      "crediting_period": "20 years",
+      "image_2020": "path_to_img_3",
+      "image_2024": "path_to_img_4",
+      "emission_reduction_unit": "tCO2e",
+      "total_emission_reduction_over_crediting_period": "259305.1",
+      "avg_annual_emission_reduction": "12965.2",
+      "sdg": [
+        "sdg1.png",
+        "sdg2.png",
+        "sdg5.png",
+        "sdg8.png",
+        "sdg13.png",
+        "sdg14.png",
+        "sdg15.png"
+      ],
+      "registry": "Terrasos"
+    }
+  ],
+  "ProjectSite": [
+    [
+      {
+        "project_name": "Mangrove Plantation Initiative in Sundarbans, India",
+        "project_id": "N/A",
+        "total_area": "160.55 ha",
+        "number_of_sites": "3",
+        "project_site_map":"path_to_shape_file",
+        "cameras_installed": "6",
+        "audio_devices_installed":"6",
+        "total_images_videos": "304",
+        "total_audiofiles": "845",
+        "total_species_identified": "21",
+       "species_distribution": [
+              {
+                "critically_endangered": [
+                  {
+                    "total": "2",
+                    "species_list": [
+                      "Fishing Cat",
+                      "Indian porcupine"
+                    ]
+                  }
+                ],
+                "endangered": [
+                  {
+                    "total": "4",
+                    "species_list": [
+                      "Wild boar",
+                      "Green Warbler",
+                      "Red-vented Bulbul",
+                      "Spectacled Parrotlet"
+                    ]
+                  }
+                ],
+                "vulnerable": [
+                  {
+                    "total": "3",
+                    "species_list": [
+                      "Common Hawk-Cuckoo",
+                      "Channel-billed Toucan",
+                      "Two-barred Warbler"
+                    ]
+                  }
+                ],
+                "near_threatened": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Oriental Magpie-Robin",
+                      "Dot-winged Antwren",
+                      "Little Spiderhunter",
+                      "White-winged Becard",
+                      "Helmeted Pygmy-Tyrant",
+                      "Greenish Warbler"
+                    ]
+                  }
+                ],
+                "least_concerned": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Clark's Nutcracker",
+                      "Rose-ringed Parakeet",
+                      "Spot-breasted Fantail",
+                      "Two-barred Warbler",
+                      "Pheasant Cuckoo",
+                      "Collared Flycatcher"
+                    ]
+                  }
+                ]
+              }
+            ],
+        "biodiversity_score": "0.72",
+        "biodiversity_intactness": "0.76",
+        "mean_species_abundance": "0.69",
+        "potential_disappearance_fraction": "0.21",
+        "human_intrusion_index":"0.39",
+        "sites": [
+          {
+            "site_name": "Tipligheri",
+            "type": "Restoration",
+            "area": "68.83 ha",
+            "path": "path_to_shape_file",
+            "camera_installed": "2",
+            "audio_devices": "2",
+            "biodiversity_score": "0.66",
+            "biodiversity_score_trend": [{"2010": 0.64, "2012":0.63, "2014": 0.63, "2015": 0.64, "2016": 0.64, "2018": 0.65, "2020": 0.65, "2022": 0.66,"2024": 0.66}],
+            "mean_species_abundance":"0.62",
+            "mean_species_abundance_trend": [{"2010": 0.63, "2012":0.63, "2014": 0.63, "2015": 0.62, "2016": 0.61, "2018": 0.61, "2020": 0.61, "2022": 0.62,"2024": 0.62}],
+            "biodiversity_intactness_index": 0.78,
+            "biodiversity_intactness_trend": [{"2010": 0.82, "2012":0.82, "2014": 0.81, "2015": 0.81, "2016": 0.80, "2018": 0.79, "2020": 0.79, "2022": 0.78,"2024": 0.78}],
+            "potential_disappearance_fraction": "0.4",
+            "potential_disappearance_fraction_trend": [{"2010": 0.38, "2012":0.38, "2014": 0.39, "2015": 0.39, "2016": 0.39, "2018": 0.39, "2020": 0.4, "2022": 0.4,"2024": 0.4}],
+            "shanon_diversity": "2.5",
+            "simpson_diversity": "0.7",
+            "species_richness": "0.54",
+            "species_diversity": "0.33",
+            "taxonomic_dissimilarity": "0.41",
+            "habitat_health": "0.68",
+            "habitat_spatial_structure": "61",
+            "habitat_map": "path_to_raster",
+            "species_habitat_health": "0.82",
+            "species_protection_index": "0.5",
+            "species_info_index": "0.73",
+            "human_intrusion": "0.4",
+           "species_distribution": [
+              {
+                "critically_endangered": [
+                  {
+                    "total": "2",
+                    "species_list": [
+                      "Fishing Cat",
+                      "Indian porcupine"
+                    ]
+                  }
+                ],
+                "endangered": [
+                  {
+                    "total": "4",
+                    "species_list": [
+                      "Wild boar",
+                      "Green Warbler",
+                      "Red-vented Bulbul",
+                      "Spectacled Parrotlet"
+                    ]
+                  }
+                ],
+                "vulnerable": [
+                  {
+                    "total": "3",
+                    "species_list": [
+                      "Common Hawk-Cuckoo",
+                      "Channel-billed Toucan",
+                      "Two-barred Warbler"
+                    ]
+                  }
+                ],
+                "near_threatened": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Oriental Magpie-Robin",
+                      "Dot-winged Antwren",
+                      "Little Spiderhunter",
+                      "White-winged Becard",
+                      "Helmeted Pygmy-Tyrant",
+                      "Greenish Warbler"
+                    ]
+                  }
+                ],
+                "least_concerned": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Clark's Nutcracker",
+                      "Rose-ringed Parakeet",
+                      "Spot-breasted Fantail",
+                      "Two-barred Warbler",
+                      "Pheasant Cuckoo",
+                      "Collared Flycatcher"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "species_detected": [
+              {
+                "2023":
+                {
+                  "total_species": "15",
+                  "total_camera_images": "36",
+                  "total_audio_files": "132",
+                  "base_url": "https://darukabiodiversity.s3.eu-north-1.amazonaws.com",
+                  "img_dir": "biodiversitycamera",
+                  "audio_dir": "biodiversityaudio",
+                  "image_species": [
+                    {
+                      "Name": "CT1_0023.png",
+                      "Type": "Fishing Cat",
+                      "Date": "14-10-2023",
+                      "Confidence_Score": "0.88",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT1_0031.jpg",
+                      "Type": "Fishing Cat",
+                      "Date": "16-10-2023",
+                      "Confidence_Score": "0.85",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT2_0064.jpg",
+                      "Type": "Fishing Cat",
+                      "Date": "24-12-2023",
+                      "Confidence_Score": "0.86",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT_0054.jpg",
+                      "Type": "Fishing cat",
+                      "Date": "14-12-2023",
+                      "Confidence_Score": "0.83",
+                      "camera_id": "0012"
+                    },
+                    {
+                      "Name": "CT_0017.jpg",
+                      "Type": "Fishing cat",
+                      "Date": "26-11-2023",
+                      "Confidence_Score": "0.85",
+                      "camera_id": "0012"
+                    },
+                    {
+                      "Name": "CT1_0054.jpg",
+                      "Type": "Indian porcupine",
+                      "Date": "13-10-2023",
+                      "Confidence_Score": "0.83",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT1_0073.jpg",
+                      "Type": "Indian porcupine",
+                      "Date": "21-10-2023",
+                      "Confidence_Score": "0.86",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT2_0029.jpg",
+                      "Type": "Wild boar",
+                      "Date": "13-10-2023",
+                      "Confidence_Score": "0.83",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT2_0069.jpg",
+                      "Type": "Wild boar",
+                      "Date": "20-11-2023",
+                      "Confidence_Score": "0.87",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT1_0025.jpg",
+                      "Type": "Wild boar",
+                      "Date": "18-10-2023",
+                      "Confidence_Score": "0.85",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT1_0064.jpg",
+                      "Type": "Wild boar",
+                      "Date": "23-10-2023",
+                      "Confidence_Score": "0.81",
+                      "camera_id": "0012"
+                    }
+                  ],
+                  "audio_species": [
+                    {
+                        "Name": "20241120_060400.WAV",
+                        "Type": "Green Warbler",
+                        "Date": "20-10-2023",
+                        "Confidence_Score": "0.89",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_060400.WAV",
+                        "Type": "Green Warbler",
+                        "Date": "13-10-2023",
+                        "Confidence_Score": "0.91",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_060700.WAV",
+                        "Type": "Red-vented Bulbul",
+                        "Date": "16-10-2023",
+                        "Confidence_Score": "0.56",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_062500.WAV",
+                        "Type": "Rose-ringed Parakeet",
+                        "Date": "16-11-2023",
+                        "Confidence_Score": "0.68",
+                        "audiomoth_id": "0022"
+                      },
+                      {
+                        "Name": "20241120_062600.WAV",
+                        "Type": "Rose-ringed Parakeet",
+                        "Date": "26-11-2023",
+                        "Confidence_Score": "0.68",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_065200.WAV",
+                        "Type": "Red-vented Bulbul",
+                        "Date": "30-11-2023",
+                        "Confidence_Score": "0.87",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_061100.WAV",
+                        "Type": "Spectacled Parrotlet",
+                        "Date": "14-09-2023",
+                        "Confidence_Score": "0.77",
+                        "audiomoth_id": "0022"
+                      },
+                      {
+                        "Name": "20241120_061700.WAV",
+                        "Type": "Common Hawk-Cuckoo",
+                        "Date": "22-08-2023",
+                        "Confidence_Score": "0.64",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_062100.WAV",
+                        "Type": "Channel-billed Toucan",
+                        "Date": "18-08-2023",
+                        "Confidence_Score": "0.68",
+                        "audiomoth_id": "0022"
+                      },
+                      {
+                        "Name": "20241120_062700.WAV",
+                        "Type": "Two-barred Warbler",
+                        "Date": "23-07-2023",
+                        "Confidence_Score": "0.68",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_075100.WAV",
+                        "Type": "Oriental Magpie-Robin",
+                        "Date": "18-07-2023",
+                        "Confidence_Score": "0.54",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_075900.WAV",
+                        "Type": "Dot-winged Antwren",
+                        "Date": "23-07-2023",
+                        "Confidence_Score": "0.67",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_073800.WAV",
+                        "Type": "Little Spiderhunter",
+                        "Date": "24-06-2023",
+                        "Confidence_Score": "0.58",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_073600.WAV",
+                        "Type": "White-winged Becard",
+                        "Date": "06-05-2023",
+                        "Confidence_Score": "0.50",
+                        "audiomoth_id": "0022"
+                      },
+                      {
+                        "Name": "20241120_073600.WAV",
+                        "Type": "Helmeted Pygmy-Tyrant",
+                        "Date": "06-01-2023",
+                        "Confidence_Score": "0.50",
+                        "audiomoth_id": "0021"
+                      },
+                      {
+                        "Name": "20241120_073300.WAV",
+                        "Type": "Greenish Warbler",
+                        "Date": "012-01-2023",
+                        "Confidence_Score": "0.65",
+                        "audiomoth_id": "0021"
+                      }
+                  ]
+                },
+                "2024":
+                {
+                  "total_species": "17",
+                  "total_camera_images": "48",
+                  "total_audio_files": "103",
+                  "base_url": "https://darukabiodiversity.s3.eu-north-1.amazonaws.com",
+                  "img_dir": "biodiversitycamera",
+                  "audio_dir": "biodiversityaudio",
+                  "image_species": [
+                    {
+                      "Name": "CT_0116.jpg",
+                      "Type": "Fishing cat",
+                      "Date": "26-11-2024",
+                      "Confidence_Score": "0.85",
+                      "camera_id": "0012"
+                    },
+                    {
+                      "Name": "CT_0123.jpg",
+                      "Type": "Fishing cat",
+                      "Date": "14-11-2024",
+                      "Confidence_Score": "0.87",
+                      "camera_id": "0012"
+                    },
+                    {
+                      "Name": "CT_01126.png",
+                      "Type": "Fishing Cat",
+                      "Date": "14-11-2024",
+                      "Confidence_Score": "0.87",
+                      "camera_id": "0011"
+                    },
+                    {
+                      "Name": "CT_01129.jpg",
+                      "Type": "Wild boar",
+                      "Date": "13-10-2024",
+                      "Confidence_Score": "0.83",
+                      "camera_id": "0011"
+                    }
+                  ],
+                  "audio_species": [
+                    {
+                      "Name": "20241120_064300.WAV",
+                      "Type": "Green Warbler",
+                      "Date": "12-10-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_065200.WAV",
+                      "Type": "Greenish Warbler",
+                      "Date": "22-8-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_065100.WAV",
+                      "Type": "Clark's Nutcracker",
+                      "Date": "30-8-2024",
+                      "Confidence_Score": "0.52",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_064700.WAV",
+                      "Type": "Rose-ringed Parakeet",
+                      "Date": "25-8-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_064100.WAV",
+                      "Type": "Spot-breasted Fantail",
+                      "Date": "10-7-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_064100.WAV",
+                      "Type": "Spot-breasted Fantail",
+                      "Date": "23-7-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_062700.WAV",
+                      "Type": "Two-barred Warbler",
+                      "Date": "19-6-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_062500.WAV",
+                      "Type": "Rose-ringed Parakeet",
+                      "Date": "13-5-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_064500.WAV",
+                      "Type": "Pheasant Cuckoo",
+                      "Date": "31-6-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_064800.WAV",
+                      "Type": "Collared Flycatcher",
+                      "Date": "20-6-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_065200.WAV",
+                      "Type": "Mountain Bluebird",
+                      "Date": "26-5-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_070200.WAV",
+                      "Type": "Common Tailorbird",
+                      "Date": "27-4-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_070600.WAV",
+                      "Type": "Long-tailed Shrike",
+                      "Date": "11-4-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_070700.WAV",
+                      "Type": "Akohekohe",
+                      "Date": "02-4-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0021"
+                    },
+                    {
+                      "Name": "20241120_071500.WAV",
+                      "Type": "White-throated Fantail",
+                      "Date": "27-4-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    },
+                    {
+                      "Name": "20241120_074100.WAV",
+                      "Type": "Indian White-eye",
+                      "Date": "20-3-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0022"
+                    }
+                  ]
+                }
+            }
+          ],
+            "species_activity_trend":[{"00.00":6, "02.00":4, "04.00": 2, "06.00":12, "08.00": 14, "10.00": 16, "12.00": 13, "14.00": 12,"16.00": 10, "18.00":19,"20.00":9,"22.00":7}],
+            "human_activity_trend": [{"00.00":0, "02.00":0, "04.00": 0, "06.00":0, "08.00": 3, "10.00": 2, "12.00": 0, "14.00": 0,"16.00": 2, "18.00":10,"20.00":1,"22.00":0}]
+          },
+          {
+            "site_name": "Maipith",
+            "type": "Restoration",
+            "area": "25.68 ha",
+            "path": "path_to_shape_file",
+            "camera_installed": "2",
+            "audio_devices": "2",
+            "biodiversity_score": "0.67",
+            "biodiversity_score_trend": [{"2010": 0.69, "2012":0.69, "2014": 0.68, "2015": 0.68, "2016": 0.68, "2018": 0.67, "2020": 0.67, "2022": 0.67,"2024": 0.67}],
+            "biodiversity_intactness_index": "0.73",
+            "biodiversity_intactness_trend": [{"2010": 0.75, "2012":0.75, "2014": 0.74, "2015": 0.74, "2016": 0.73, "2018": 0.73, "2020": 0.73, "2022": 0.73,"2024": 0.73}],
+            "mean_species_abundance": "0.65",
+            "mean_species_abundance_trend": [{"2010": 0.68, "2012":0.68, "2014": 0.67, "2015": 0.67, "2016": 0.66, "2018": 0.65, "2020": 0.65, "2022": 0.65,"2024": 0.65}],
+            "potential_disappearance_fraction": "0.33",
+            "potential_disappearance_fraction_trend":[{"2010": 0.31, "2012":0.31, "2014": 0.31, "2015": 0.32, "2016": 0.32, "2018": 0.33, "2020": 0.33, "2022": 0.33,"2024": 0.33}],
+            "shanon_diversity": "2.5",
+            "simpson_diversity": "0.7",
+            "species_richness": "0.54",
+            "species_diversity": "0.33",
+            "taxonomic_dissimilarity": "0.41",
+            "habitat_health": "0.68",
+            "habitat_spatial_structure": "61",
+            "habitat_map": "path_to_raster",
+            "species_habitat_health": "0.82",
+            "species_protection_index": "0.5",
+            "species_info_index": "0.73",
+            "human_intrusion": "0.4",
+            "species_distribution": [
+              {
+                "critically_endangered": [
+                  {
+                    "total": "2",
+                    "species_list": [
+                      "Fishing Cat",
+                      "Indian porcupine"
+                    ]
+                  }
+                ],
+                "endangered": [
+                  {
+                    "total": "4",
+                    "species_list": [
+                      "Wild boar",
+                      "Green Warbler",
+                      "Red-vented Bulbul",
+                      "Spectacled Parrotlet"
+                    ]
+                  }
+                ],
+                "vulnerable": [
+                  {
+                    "total": "3",
+                    "species_list": [
+                      "Common Hawk-Cuckoo",
+                      "Channel-billed Toucan",
+                      "Two-barred Warbler"
+                    ]
+                  }
+                ],
+                "near_threatened": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Oriental Magpie-Robin",
+                      "Dot-winged Antwren",
+                      "Little Spiderhunter",
+                      "White-winged Becard",
+                      "Helmeted Pygmy-Tyrant",
+                      "Greenish Warbler"
+                    ]
+                  }
+                ],
+                "least_concerned": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Clark's Nutcracker",
+                      "Rose-ringed Parakeet",
+                      "Spot-breasted Fantail",
+                      "Two-barred Warbler",
+                      "Pheasant Cuckoo",
+                      "Collared Flycatcher"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "species_detected": [
+              {
+                "2023":
+                {
+                  "total_species": "18",
+                  "total_camera_images": "52",
+                  "total_audio_files": "129",
+                  "base_url": "https://darukabiodiversity.s3.eu-north-1.amazonaws.com",
+                  "img_dir": "biodiversitycamera",
+                  "audio_dir": "biodiversityaudio",
+                  "image_species": [
+                    {
+                      "Name": "IMG1135.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "14-10-2023",
+                      "Confidence_Score": "0.59",
+                      "camera_id": "0412"
+                    },
+                    {
+                      "Name": "IMG3997.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "26-10-2023",
+                      "Confidence_Score": "0.53",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG6513.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "16-10-2023",
+                      "Confidence_Score": "0.67",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "13-11-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG1135.jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "27-11-2023",
+                      "Confidence_Score": "0.67",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG3246.jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "20-12-2023",
+                      "Confidence_Score": "0.62",
+                      "camera_id": "0411"
+                    }
+                  ],
+                  "audio_species": [
+                    {
+                      "Name": "20241120_074000_8.wav",
+                      "Type": "Green Warbler",
+                      "Date": "12-10-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_074200_8.wav",
+                      "Type": "Greenish Warbler",
+                      "Date": "14-06-2023",
+                      "Confidence_Score": "0.98",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_074700_2.wav",
+                      "Type": "Red-vented Bulbul",
+                      "Date": "21-09-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_074200_7.wav",
+                      "Type": "Two-barred Warbler",
+                      "Date": "29-07-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_040000_1.wav",
+                      "Type": "Large-tailed Nightjar",
+                      "Date": "02-07-2023",
+                      "Confidence_Score": "0.81",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_051800_2.wav",
+                      "Type": "Asian Koel",
+                      "Date": "26-06-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_055300_6.wav",
+                      "Type": "Black-billed Scythebill",
+                      "Date": "19-05-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_061700_6.wav",
+                      "Type": "Rose-ringed Parakeet",
+                      "Date": "22-05-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_063300_5.wav",
+                      "Type": "Plain Tyrannulet",
+                      "Date": "29-04-2023",
+                      "Confidence_Score": "0.59",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_063300_6.wav",
+                      "Type": "Band-winged Nightjar",
+                      "Date": "29-04-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_070400_5.wav",
+                      "Type": "Common Tailorbird",
+                      "Date": "29-04-2023",
+                      "Confidence_Score": "0.56",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_070800_7.wav",
+                      "Type": "Turquoise Parrot",
+                      "Date": "13-04-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_071400_2.wav",
+                      "Type": "Spot-breasted Fantail",
+                      "Date": "30-04-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_071700_6.wav",
+                      "Type": "Oriental Magpie-Robin",
+                      "Date": "15-03-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_072400_3.wav",
+                      "Type": "Flame-colored Tanager",
+                      "Date": "23-03-2023",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_072400_5.wav",
+                      "Type": "Chalk-browed Mockingbird",
+                      "Date": "02-02-2023",
+                      "Confidence_Score": "0.59",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_072500_6.wav",
+                      "Type": "Blue-throated Bee-eater",
+                      "Date": "25-02-2023",
+                      "Confidence_Score": "0.52",
+                      "audiomoth_id": "0421"
+                    }
+                  ]
+                },
+                "2024":
+                {
+                  "total_species": "11",
+                  "total_camera_images": "49",
+                  "total_audio_files": "163",
+                  "base_url": "https://darukabiodiversity.s3.eu-north-1.amazonaws.com",
+                  "img_dir": "biodiversitycamera",
+                  "audio_dir": "biodiversityaudio",
+                  "image_species": [
+                    {
+                      "Name": "IMG0032.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "14-10-2024",
+                      "Confidence_Score": "0.61",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG0349.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "28-11-2024",
+                      "Confidence_Score": "0.55",
+                      "camera_id": "0412"
+                    },
+                    {
+                      "Name": "IMG3249.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "20-12-2024",
+                      "Confidence_Score": "0.58",
+                      "camera_id": "0412"
+                    },
+                    {
+                      "Name": "IMG7796,jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "11-10-2024",
+                      "Confidence_Score": "0.73",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG3248,jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "21-10-2024",
+                      "Confidence_Score": "0.67",
+                      "camera_id": "0411"
+                    },
+                    {
+                      "Name": "IMG1546,jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "13-11-2024",
+                      "Confidence_Score": "0.71",
+                      "camera_id": "0411"
+                    }
+                  ],
+                  "audio_species": [
+                    {
+                      "Name": "20241120_073900_3.wav",
+                      "Type": "Red-vented Bulbul",
+                      "Date": "12-10-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_073900_8.wav",
+                      "Type": "Greenish Warbler",
+                      "Date": "13-09-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_074300_3.wav",
+                      "Type": "Two-barred Warbler",
+                      "Date": "21-08-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_074300_4.wav",
+                      "Type": "Green Warbler",
+                      "Date": "19-06-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_040200_7.wav",
+                      "Type": "Large-tailed Nightjar",
+                      "Date": "21-08-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_042100_2.wav",
+                      "Type": "Large-tailed Nightjar",
+                      "Date": "12-07-2024",
+                      "Confidence_Score": "1.0",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_055400_4.wav",
+                      "Type": "Black-billed Scythebill",
+                      "Date": "02-05-2024",
+                      "Confidence_Score": "0.53",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_055400_4.wav",
+                      "Type": "Black-billed Scythebill",
+                      "Date": "02-05-2024",
+                      "Confidence_Score": "0.53",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_062800_1.wav",
+                      "Type": "Rose-ringed Parakeet",
+                      "Date": "17-05-2024",
+                      "Confidence_Score": "0.65",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_063300_6.wav",
+                      "Type": "Band-winged Nightjar",
+                      "Date": "22-04-2024",
+                      "Confidence_Score": "0.65",
+                      "audiomoth_id": "0421"
+                    },
+                    {
+                      "Name": "20241120_072400_5.wav",
+                      "Type": "Chalk-browed Mockingbird",
+                      "Date": "07-04-2024",
+                      "Confidence_Score": "0.59",
+                      "audiomoth_id": "0422"
+                    },
+                    {
+                      "Name": "20241120_072400_3.wav",
+                      "Type": "Flame-colored Tanager",
+                      "Date": "07-04-2024",
+                      "Confidence_Score": "0.59",
+                      "audiomoth_id": "0422"
+                    }
+                  ]
+                }
+            }
+            ],
+            "species_activity_trend":[{"00.00":3, "02.00":2, "04.00": 1, "06.00":11, "08.00": 12, "10.00": 19, "12.00": 14, "14.00": 10,"16.00": 8, "18.00":18,"20.00":7,"22.00":5}],
+            "human_activity_trend": [{"00.00":0, "02.00":0, "04.00": 0, "06.00":0, "08.00": 3, "10.00": 2, "12.00": 0, "14.00": 0,"16.00": 2, "18.00":10,"20.00":1,"22.00":0}]
+          },
+          {
+            "site_name": "Dwariknagar",
+            "type": "Conservation",
+            "area": "66.04 ha",
+            "path": "path_to_shape_file",
+            "camera_installed": "2",
+            "audio_devices": "2",
+            "biodiversity_score": "0.76",
+            "biodiversity_score_trend": [{"2010": 0.79, "2012":0.79, "2014": 0.78, "2015": 0.78, "2016": 0.77, "2018": 0.77, "2020": 0.77, "2022": 0.76,"2024": 0.76}],
+            "biodiversity_intactness_index":"0.79",
+            "biodiversity_intactness_trend":[{"2010": 0.81, "2012":0.81, "2014": 0.80, "2015": 0.80, "2016": 0.79, "2018": 0.79, "2020": 0.79, "2022": 0.79,"2024": 0.79}],
+            "mean_species_abundance":"0.72",
+            "mean_species_abundance_trend": [{"2010": 0.72, "2012":0.72, "2014": 0.72, "2015": 0.71, "2016": 0.71, "2018": 0.71, "2020": 0.71, "2022": 0.72,"2024": 0.72}],
+            "potential_disappearance_fraction": "0.23",
+            "potential_disappearance_fraction_trend": [{"2010": 0.22, "2012":0.22, "2014": 0.22, "2015": 0.22, "2016": 0.21, "2018": 0.21, "2020": 0.21, "2022": 0.21,"2024": 0.21}],
+            "shanon_diversity": "2.5",
+            "simpson_diversity": "0.7",
+            "species_richness": "0.54",
+            "species_diversity": "0.33",
+            "taxonomic_dissimilarity": "0.41",
+            "habitat_health": "0.68",
+            "habitat_spatial_structure": "64.54",
+            "habitat_map": "path_to_raster",
+            "species_habitat_health": "0.82",
+            "species_protection_index": "0.5",
+            "species_info_index": "0.73",
+            "human_intrusion": "0.4",
+            "species_distribution": [
+              {
+                "critically_endangered": [
+                  {
+                    "total": "2",
+                    "species_list": [
+                      "Fishing Cat",
+                      "Indian porcupine"
+                    ]
+                  }
+                ],
+                "endangered": [
+                  {
+                    "total": "4",
+                    "species_list": [
+                      "Wild boar",
+                      "Green Warbler",
+                      "Red-vented Bulbul",
+                      "Spectacled Parrotlet"
+                    ]
+                  }
+                ],
+                "vulnerable": [
+                  {
+                    "total": "3",
+                    "species_list": [
+                      "Common Hawk-Cuckoo",
+                      "Channel-billed Toucan",
+                      "Two-barred Warbler"
+                    ]
+                  }
+                ],
+                "near_threatened": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Oriental Magpie-Robin",
+                      "Dot-winged Antwren",
+                      "Little Spiderhunter",
+                      "White-winged Becard",
+                      "Helmeted Pygmy-Tyrant",
+                      "Greenish Warbler"
+                    ]
+                  }
+                ],
+                "least_concerned": [
+                  {
+                    "total": "6",
+                    "species_list": [
+                      "Clark's Nutcracker",
+                      "Rose-ringed Parakeet",
+                      "Spot-breasted Fantail",
+                      "Two-barred Warbler",
+                      "Pheasant Cuckoo",
+                      "Collared Flycatcher"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "species_detected": [
+              {
+                "2023":
+                {
+                "total_species": "15",
+                "total_camera_images": "78",
+                "total_audio_files": "142",
+                "base_url": "https://darukabiodiversity.s3.eu-north-1.amazonaws.com",
+                "img_dir": "biodiversitycamera",
+                "audio_dir": "biodiversityaudio",
+                "image_species": [
+                  {
+                    "Name": "CT_0116.jpg",
+                      "Type": "Fishing Cat",
+                      "Date": "26-11-2024",
+                      "Confidence_Score": "0.85",
+                      "camera_id": "0611"
+                  },
+                  {
+                    "Name": "CT_0017.jpg",
+                    "Type": "Fishing Cat",
+                    "Date": "08-11-2023",
+                    "Confidence_Score": "0.87",
+                    "camera_id": "0612"
+                  },
+                  {
+                   "Name": "IMG1135.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "14-10-2023",
+                      "Confidence_Score": "0.59",
+                      "camera_id": "0612" 
+                  },
+                  {
+                   "Name": "IMG3997.jpg",
+                      "Type": "Jungle cat",
+                      "Date": "26-10-2023",
+                      "Confidence_Score": "0.53",
+                      "camera_id": "0611" 
+                  },
+                  { "Name": "CT1_0073.jpg",
+                    "Type": "Indian porcupine",
+                    "Date": "21-10-2023",
+                    "Confidence_Score": "0.86",
+                    "camera_id": "0611"
+                  },
+                  {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "13-11-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0612"
+                  },
+                  {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Small Indian Civet",
+                      "Date": "31-12-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0611"
+                  },
+                  {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Spotted Deer",
+                      "Date": "19-11-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0611"
+                  }
+                ],
+                "audio_species": [
+                  {
+                    "Name": "20241120_072400_5.wav",
+                    "Type": "Chalk-browed Mockingbird",
+                    "Date": "13-03-2023",
+                    "Confidence_Score": "0.89",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_074200_7.wav",
+                    "Type": "Two-barred Warbler",
+                    "Date": "02-08-2023",
+                    "Confidence_Score": "0.58",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_074700_2.wav",
+                    "Type": "Red-vented Bulbul",
+                    "Date": "03-06-2023",
+                    "Confidence_Score": "0.85",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_070600_7.wav",
+                    "Type": "Plain-throated Antwren",
+                    "Date": "21-08-2023",
+                    "Confidence_Score": "0.82",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_070500_5.wav",
+                    "Type": "Rose-ringed Parakeet",
+                    "Date": "30-07-2023",
+                    "Confidence_Score": "0.59",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_070800_7.wav",
+                    "Type": "Turquoise Parrot",
+                    "Date": "12-05-2023",
+                    "Confidence_Score": "0.62",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_070100_8.wav",
+                    "Type": "Greenish Warbler",
+                    "Date": "26-05-2023",
+                    "Confidence_Score": "1.0",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_070400_5.wav",
+                    "Type": "Common Tailorbird",
+                    "Date": "26-05-2023",
+                    "Confidence_Score": "0.57",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_070400_5.wav",
+                    "Type": "Common Tailorbird",
+                    "Date": "26-05-2023",
+                    "Confidence_Score": "0.57",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_072200_5.wav",
+                    "Type": "Dwarf Tyrant-Manakin",
+                    "Date": "19-03-2023",
+                    "Confidence_Score": "1.0",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_071400_2.wav",
+                    "Type": "Spot-breasted Fantail",
+                    "Date": "30-03-2023",
+                    "Confidence_Score": "0.63",
+                    "audiomoth_id": "0622"
+                  }
+                ]
+              },
+            "2024":
+              {
+               "total_species": "15",
+                "total_camera_images": "41",
+                "total_audio_files": "176",
+                "base_url": "https://darukabiodiversity.s3.eu-north-1.amazonaws.com",
+                "img_dir": "biodiversitycamera",
+                "audio_dir": "biodiversityaudio",
+                "image_species": [
+                  {
+                    "Name": "CT_0116.jpg",
+                      "Type": "Fishing Cat",
+                      "Date": "26-11-2024",
+                      "Confidence_Score": "0.85",
+                      "camera_id": "0611"
+                  },
+                  {
+                    "Name": "CT_0017.jpg",
+                    "Type": "Fishing Cat",
+                    "Date": "08-11-2023",
+                    "Confidence_Score": "0.87",
+                    "camera_id": "0612"
+                  },
+                  {
+                   "Name": "IMG1135.jpg",
+                      "Type": "Jungle cat (Felis chaus)",
+                      "Date": "14-10-2023",
+                      "Confidence_Score": "0.59",
+                      "camera_id": "0612" 
+                  },
+                  {
+                   "Name": "IMG3997.jpg",
+                      "Type": "Jungle cat (Felis chaus)",
+                      "Date": "26-10-2023",
+                      "Confidence_Score": "0.53",
+                      "camera_id": "0611" 
+                  },
+                  { "Name": "CT1_0073.jpg",
+                    "Type": "Indian porcupine",
+                    "Date": "21-10-2023",
+                    "Confidence_Score": "0.86",
+                    "camera_id": "0611"
+                  },
+                  {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Small Indian Civet (Viverricula indica)",
+                      "Date": "13-11-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0612"
+                  },
+                  {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Small Indian Civet (Viverricula indica)",
+                      "Date": "31-12-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0611"
+                  },
+                  {
+                      "Name": "IMG2248.jpg",
+                      "Type": "Spotted Deer (Axis axis)",
+                      "Date": "19-11-2023",
+                      "Confidence_Score": "0.72",
+                      "camera_id": "0611"
+                  } 
+                ],
+                "audio_species": [
+                  {
+                    "Name": "20241120_072400_5.wav",
+                    "Type": "Chalk-browed Mockingbird",
+                    "Date": "13-03-2023",
+                    "Confidence_Score": "0.89",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_074000_1.wav",
+                    "Type": "Green Warbler",
+                    "Date": "10-10-2023",
+                   "Confidence_Score": "1.0",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_074200_7.wav",
+                    "Type": "Two-barred Warbler",
+                    "Date": "02-08-2023",
+                    "Confidence_Score": "0.58",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_074700_2.wav",
+                    "Type": "Red-vented Bulbul",
+                    "Date": "03-06-2023",
+                    "Confidence_Score": "0.85",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_070600_7.wav",
+                    "Type": "Plain-throated Antwren",
+                    "Date": "21-08-2023",
+                    "Confidence_Score": "0.82",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_070500_5.wav",
+                    "Type": "Rose-ringed Parakeet",
+                    "Date": "30-07-2023",
+                    "Confidence_Score": "0.59",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_070800_7.wav",
+                    "Type": "Turquoise Parrot",
+                    "Date": "12-05-2023",
+                    "Confidence_Score": "0.62",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_070100_8.wav",
+                    "Type": "Greenish Warbler",
+                    "Date": "26-05-2023",
+                    "Confidence_Score": "1.0",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_070400_5.wav",
+                    "Type": "Common Tailorbird",
+                    "Date": "26-05-2023",
+                    "Confidence_Score": "0.57",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_070400_5.wav",
+                    "Type": "Common Tailorbird",
+                    "Date": "26-05-2023",
+                    "Confidence_Score": "0.57",
+                    "audiomoth_id": "0622"
+                  },
+                  {
+                    "Name": "20241120_072200_5.wav",
+                    "Type": "Dwarf Tyrant-Manakin",
+                    "Date": "19-03-2023",
+                    "Confidence_Score": "1.0",
+                    "audiomoth_id": "0621"
+                  },
+                  {
+                    "Name": "20241120_071400_2.wav",
+                    "Type": "Spot-breasted Fantail",
+                    "Date": "30-03-2023",
+                    "Confidence_Score": "0.63",
+                    "audiomoth_id": "0622"
+                  }
+                ] 
+              }
+              }
+            ],
+            "species_activity_trend":[{"00.00":5, "02.00":3, "04.00": 2, "06.00":12, "08.00": 13, "10.00": 19, "12.00": 13, "14.00": 9,"16.00": 8, "18.00":18,"20.00":7,"22.00":5}],
+            "human_activity_trend": [{"00.00":0, "02.00":0, "04.00": 0, "06.00":0, "08.00": 3, "10.00": 2, "12.00": 0, "14.00": 0,"16.00": 2, "18.00":10,"20.00":1,"22.00":0}]
+    
+          }],
+       "credits":[
+        {
+            "overall_issued/retired": [{"issued":5000,"retired":3407}],
+            "total_credits_over_crediting_period": 8407,
+            "historical_credits_retirement": [{"July 2023":1300, "October 2023": 450 , "December 2023": 623, "February 2024": 510, "August 2024": 524}],
+            "credits_available_for_sale": 1593,
+            "average_price_per_credit": "$30",
+            "credit_retired": 6148
+        }
+       ] 
+      }
+    ]
+  ],
+  "CarbonCredit": [
+    {
+      "project_name": "Mangrove Plantation Initiative in Sundarbans, India",
+      "project_id": "N/A",
+      "total_area": 160.55,
+      "total_area_unit": "ha",
+      "number_of_sites": 3,
+      "project_site_map": "path_to_shape_file",
+      "temperature": 35.9,
+      "temperature_unit": "deg C",
+      "precipitation": 154.6,
+      "precipitation_unit": "mm",
+      "soil_type": "Histols",
+      "total_mean_biomass": 1687.46,
+      "total_mean_biomass_unit": "Mg/ha",
+      "total_mean_carbon_stock": 706.54,
+      "total_mean_carbon_stock_unit": "t/ha",
+      "estimated_ghg_baseline_emissions": 0,
+      "estimated_ghg_baseline_emissions_unit": "tCo2e",
+      "project_area_unit": "ha",
+      "baseline_start_date": 2022,
+      "estimated_ghg_emissions_removal/reductions": {
+        "unit": "tCO2e",
+        "2022": 0,
+        "2023": 732,
+        "2024": 2923,
+        "2025": 5817,
+        "2026": 7845,
+        "2027": 9370,
+        "2028": 11880,
+        "2029": 13900,
+        "2030": 14844,
+        "2031": 15751,
+        "2032": 16590,
+        "2033": 17464,
+        "2034": 18233,
+        "2035": 18931,
+        "2036": 19600,
+        "2037": 20230,
+        "2038": 20820,
+        "2039": 21390,
+        "2040": 21930,
+        "2041": 22450,
+        "2042": 11356
+      },
+      "total_removals": 285732,
+      "total_removals_unit": "tCO2e",
+      "average_annual_removals": 14287,
+      "average_annual_removals_unit": "tCO2e",
+      "sites": [
+        {
+          "site_name": "Tipligheri",
+          "type": "Restoration",
+          "aoi_path": "path_to_shape_file",
+          "total_area": 68.83,
+          "total_area_unit": "ha",
+          "total_plantation_area": "68.83",
+          "total_plantation_area_unit": "ha",
+          "total_planted_trees": 5000,
+          "lulc_timeseries": {
+            "2000": {
+              "Rainfed cropland": 1.53,
+              "Irrigated cropland": 43.74,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.62,
+              "Marsh": 0.81,
+              "Flooded flat": 1.80,
+              "Mangrove": 9.27,
+              "Tidal flat": 1.71,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.52,
+              "Water body": 9.90
+            },
+            "2001": {
+              "Rainfed cropland": 1.26,
+              "Irrigated cropland": 43.83,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.71,
+              "Sparse vegetation (fc<0.15)": 1.00,
+              "Marsh": 1.17,
+              "Flooded flat": 1.35,
+              "Mangrove": 8.73,
+              "Tidal flat": 2.07,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.43,
+              "Water body": 10.26
+            },
+            "2002": {
+              "Rainfed cropland": 1.17,
+              "Irrigated cropland": 45.99,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 1.00,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.98,
+              "Sparse vegetation (fc<0.15)": 0.18,
+              "Marsh": 1.89,
+              "Flooded flat": 2.25,
+              "Mangrove": 7.92,
+              "Tidal flat": 1.17,
+              "Impervious surfaces": 0.90,
+              "Bare areas": 2.43,
+              "Water body": 8.10
+            },
+            "2003": {
+              "Rainfed cropland": 1.08,
+              "Irrigated cropland": 45.90,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.44,
+              "Sparse vegetation (fc<0.15)": 0.18,
+              "Marsh": 0.81,
+              "Flooded flat": 2.34,
+              "Mangrove": 9.63,
+              "Tidal flat": 1.80,
+              "Impervious surfaces": 1.17,
+              "Bare areas": 1.98,
+              "Water body": 7.65
+            },
+            "2004": {
+              "Rainfed cropland": 1.35,
+              "Irrigated cropland": 45.27,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.53,
+              "Sparse vegetation (fc<0.15)": 0.27,
+              "Marsh": 0.36,
+              "Flooded flat": 1.80,
+              "Mangrove": 9.72,
+              "Tidal flat": 2.07,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.79,
+              "Water body": 7.83
+            },
+            "2005": {
+              "Rainfed cropland": 1.53,
+              "Irrigated cropland": 44.64,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.62,
+              "Sparse vegetation (fc<0.15)": 0.18,
+              "Marsh": 0.72,
+              "Flooded flat": 2.70,
+              "Mangrove": 9.18,
+              "Tidal flat": 2.52,
+              "Impervious surfaces": 0.81,
+              "Bare areas": 2.43,
+              "Water body": 7.56
+            },
+            "2006": {
+              "Rainfed cropland": 1.62,
+              "Irrigated cropland": 45.36,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.27,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.35,
+              "Marsh": 1.26,
+              "Flooded flat": 3.15,
+              "Mangrove": 8.46,
+              "Tidal flat": 1.80,
+              "Impervious surfaces": 1.08,
+              "Bare areas": 2.43,
+              "Water body": 7.20
+            },
+            "2007": {
+              "Rainfed cropland": 1.53,
+              "Irrigated cropland": 45.09,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.36,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.44,
+              "Marsh": 0.99,
+              "Flooded flat": 2.07,
+              "Mangrove": 9.18,
+              "Tidal flat": 1.89,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.79,
+              "Water body": 7.65
+            },
+            "2008": {
+              "Rainfed cropland": 1.35,
+              "Irrigated cropland": 44.19,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.27,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.44,
+              "Marsh": 0.54,
+              "Flooded flat": 2.61,
+              "Mangrove": 10.17,
+              "Tidal flat": 2.79,
+              "Impervious surfaces": 1.26,
+              "Bare areas": 2.34,
+              "Water body": 7.02
+            },
+            "2009": {
+              "Rainfed cropland": 1.44,
+              "Irrigated cropland": 44.82,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.26,
+              "Marsh": 1.17,
+              "Flooded flat": 2.70,
+              "Mangrove": 9.18,
+              "Tidal flat": 2.61,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.25,
+              "Water body": 7.38
+            },
+            "2010": {
+              "Rainfed cropland": 1.44,
+              "Irrigated cropland": 45.18,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.35,
+              "Marsh": 1.26,
+              "Flooded flat": 3.15,
+              "Mangrove": 8.82,
+              "Tidal flat": 2.16,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.25,
+              "Water body": 7.20
+            },
+            "2011": {
+              "Rainfed cropland": 1.35,
+              "Irrigated cropland": 44.55,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.27,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.53,
+              "Swamp": 0.18,
+              "Marsh": 2.07,
+              "Flooded flat": 2.88,
+              "Mangrove": 8.28,
+              "Tidal flat": 3.60,
+              "Impervious surfaces": 1.44,
+              "Bare areas": 2.52,
+              "Water body": 5.40
+            },
+            "2012": {
+              "Rainfed cropland": 1.35,
+              "Irrigated cropland": 45.81,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.36,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.53,
+              "Swamp": 0.54,
+              "Marsh": 3.96,
+              "Flooded flat": 2.25,
+              "Mangrove": 7.20,
+              "Tidal flat": 2.70,
+              "Impervious surfaces": 1.17,
+              "Bare areas": 2.61,
+              "Water body": 4.50
+            },
+            "2013": {
+              "Rainfed cropland": 1.44,
+              "Irrigated cropland": 45.81,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.27,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.35,
+              "Sparse vegetation (fc<0.15)": 0.27,
+              "Swamp": 0.27,
+              "Marsh": 3.78,
+              "Flooded flat": 2.34,
+              "Mangrove": 8.55,
+              "Tidal flat": 2.52,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.61,
+              "Water body": 3.87
+            },
+            "2014": {
+              "Rainfed cropland": 1.17,
+              "Irrigated cropland": 45.27,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.27,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.53,
+              "Swamp": 0.18,
+              "Marsh": 3.42,
+              "Flooded flat": 1.98,
+              "Mangrove": 9.54,
+              "Tidal flat": 3.78,
+              "Impervious surfaces": 1.08,
+              "Bare areas": 2.61,
+              "Water body": 3.15
+            },
+            "2015": {
+              "Rainfed cropland": 1.17,
+              "Irrigated cropland": 46.89,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.36,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.17,
+              "Sparse vegetation (fc<0.15)": 0.27,
+              "Swamp": 0.27,
+              "Marsh": 4.05,
+              "Flooded flat": 1.62,
+              "Mangrove": 8.73,
+              "Tidal flat": 2.52,
+              "Impervious surfaces": 0.90,
+              "Bare areas": 2.88,
+              "Water body": 3.24
+            },
+            "2016": {
+              "Rainfed cropland": 0.99,
+              "Irrigated cropland": 46.98,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.90,
+              "Sparse vegetation (fc<0.15)": 0.18,
+              "Swamp": 0.36,
+              "Marsh": 4.95,
+              "Flooded flat": 1.17,
+              "Mangrove": 8.37,
+              "Tidal flat": 2.43,
+              "Impervious surfaces": 0.72,
+              "Bare areas": 2.43,
+              "Water body": 4.23
+            },
+            "2017": {
+              "Rainfed cropland": 0.81,
+              "Irrigated cropland": 46.53,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.45,
+              "Sparse vegetation (fc<0.15)": 0.18,
+              "Swamp": 0.18,
+              "Marsh": 4.32,
+              "Flooded flat": 1.17,
+              "Mangrove": 8.73,
+              "Tidal flat": 3.33,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.16,
+              "Water body": 4.41
+            },
+            "2018": {
+              "Rainfed cropland": 0.72,
+              "Irrigated cropland": 45.81,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.72,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.72,
+              "Sparse vegetation (fc<0.15)": 0.18,
+              "Swamp": 0.18,
+              "Marsh": 3.42,
+              "Flooded flat": 1.35,
+              "Mangrove": 9.99,
+              "Tidal flat": 2.25,
+              "Impervious surfaces": 1.08,
+              "Bare areas": 2.43,
+              "Water body": 5.22
+            },
+            "2019": {
+              "Rainfed cropland": 0.90,
+              "Irrigated cropland": 45.63,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.72,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.72,
+              "Swamp": 0.18,
+              "Marsh": 3.06,
+              "Flooded flat": 1.80,
+              "Mangrove": 9.63,
+              "Tidal flat": 1.53,
+              "Impervious surfaces": 1.17,
+              "Bare areas": 2.34,
+              "Water body": 6.21
+            },
+            "2020": {
+              "Rainfed cropland": 0.72,
+              "Irrigated cropland": 45.99,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.45,
+              "Open evergreen needle-leaved forest (0.15< fc <0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.99,
+              "Swamp": 0.18,
+              "Marsh": 4.23,
+              "Flooded flat": 0.99,
+              "Mangrove": 9.54,
+              "Tidal flat": 2.16,
+              "Impervious surfaces": 1.17,
+              "Bare areas": 2.16,
+              "Water body": 5.22
+            },
+            "2021": {
+              "Rainfed cropland": 0.81,
+              "Irrigated cropland": 46.08,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.54,
+              "Open evergreen needle-leaved forest (0.15< fc <0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.81,
+              "Swamp": 0.18,
+              "Marsh": 4.05,
+              "Flooded flat": 1.44,
+              "Saline": 0.0,
+              "Mangrove": 9.63,
+              "Salt marsh": 0.0,
+              "Tidal flat": 2.16,
+              "Impervious surfaces": 1.08,
+              "Bare areas": 2.25,
+              "Water body": 4.86
+            },
+            "2022": {
+              "Rainfed cropland": 0.81,
+              "Irrigated cropland": 47.43,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.54,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.90,
+              "Swamp": 0.18,
+              "Marsh": 5.04,
+              "Flooded flat": 0.99,
+              "Mangrove": 8.82,
+              "Tidal flat": 2.25,
+              "Impervious surfaces": 0.99,
+              "Bare areas": 2.34,
+              "Water body": 3.60
+            }
+          },
+          "lulc_transition_piechart": {
+            "unit": "ha",
+            "2000": {
+              "Bare areas": 2.52,
+              "Flooded flat": 1.80,
+              "Herbaceous cover cropland": 0.09,
+              "Impervious surfaces": 0.99,
+              "Irrigated cropland": 43.74,
+              "Mangrove": 9.27,
+              "Marsh": 0.81,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.62,
+              "Rainfed cropland": 1.53,
+              "Tidal flat": 1.71,
+              "Water body": 9.90
+            },
+            "2022": {
+              "Bare areas": 2.34,
+              "Flooded flat": 0.99,
+              "Herbaceous cover cropland": 0.09,
+              "Impervious surfaces": 0.99,
+              "Irrigated cropland": 47.43,
+              "Mangrove": 8.82,
+              "Marsh": 5.04,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.54,
+              "Open evergreen needle-leaved forest (0.15< fc <0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.90,
+              "Rainfed cropland": 0.81,
+              "Swamp": 0.18,
+              "Tidal flat": 2.25,
+              "Water body": 3.60
+            }
+          },
+          "surface_water_transition": {
+            "unit": "ha",
+            "Permanent": 0.03,
+            "New permanent": 0.00,
+            "Lost permanent": 0.29,
+            "Seasonal": 0.00,
+            "New seasonal": 0.08,
+            "Lost seasonal": 6.15,
+            "Permanent to seasonal": 0.07,
+            "Ephemeral permanent": 0.09,
+            "Ephemeral seasonal": 1.51
+          },
+          "agb_tif_path": "path_to_tif_file",
+          "agb": 38282.89,
+          "agb_unit": "Mg",
+          "mean_agb": 42.91,
+          "mean_agb_unit": "Mg",
+          "cstock_agb": 15461.75,
+          "cstock_agb_unit": "Mg/ha",
+          "mean_cstock_agb": 24.89,
+          "mean_cstock_agb_unit": "Mg/ha",
+          "bgb": 18375.78,
+          "bgb_unit": "Mg",
+          "mean_bgb": 20.59,
+          "mean_bgb_unit": "Mg",
+          "cstock_bgb": 5581.65,
+          "cstock_bgb_unit": "Mg/ha",
+          "mean_cstock_bgb": 13.89,
+          "mean_cstock_bgb_unit": "Mg/ha",
+          "soil_properties": {
+            "sand": {
+              "unit": "%",
+              "0cm": 0.34,
+              "10cm": 0.34,
+              "30cm": 0.32,
+              "60cm": 0.32,
+              "100cm": 0.33,
+              "200cm": 0.34
+            },
+            "clay": {
+              "unit": "%",
+              "0cm": 0.33,
+              "10cm": 0.33,
+              "30cm": 0.36,
+              "60cm": 0.38,
+              "100cm": 0.38,
+              "200cm": 0.37
+            },
+            "organic_carbon": {
+              "unit": "%",
+              "0cm": 0.01,
+              "10cm": 0.01,
+              "30cm": 0.01,
+              "60cm": 0.02,
+              "100cm": 0.01,
+              "200cm": 0.01
+            }
+          },
+          "soc": {
+            "unit": "t/ha",
+            "0cm": 0.01,
+            "10cm": 0.84,
+            "30cm": 1.22,
+            "60cm": 2.37,
+            "100cm": 3.69,
+            "200cm": 5.65
+          }
+        },
+        {
+          "site_name": "Maipith",
+          "type": "Restoration",
+          "aoi_path": "path_to_shape_file",
+          "total_area": 25.68,
+          "total_area_unit": "ha",
+          "total_plantation_area": "16.55",
+          "total_plantation_area_unit": "ha",
+          "total_planted_trees": 1000,
+          "lulc_timeseries": {
+            "2000": {
+              "Irrigated cropland": 9.00,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.44,
+              "Mangrove": 14.49,
+              "Tidal flat": 2.43
+            },
+            "2001": {
+              "Irrigated cropland": 7.29,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.36,
+              "Marsh": 2.88,
+              "Mangrove": 13.41,
+              "Salt marsh": 0.90,
+              "Tidal flat": 2.88
+            },
+            "2002": {
+              "Irrigated cropland": 7.47,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.98,
+              "Mangrove": 14.04,
+              "Salt marsh": 1.26,
+              "Tidal flat": 2.79
+            },
+            "2003": {
+              "Irrigated cropland": 7.11,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 1.26,
+              "Mangrove": 15.39,
+              "Salt marsh": 0.99,
+              "Tidal flat": 2.79
+            },
+            "2004": {
+              "Irrigated cropland": 6.30,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.36,
+              "Marsh": 1.62,
+              "Mangrove": 16.65,
+              "Salt marsh": 0.90,
+              "Tidal flat": 1.98
+            },
+            "2005": {
+              "Irrigated cropland": 6.39,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.17,
+              "Mangrove": 15.84,
+              "Salt marsh": 0.99,
+              "Tidal flat": 3.06
+            },
+            "2006": {
+              "Irrigated cropland": 6.66,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.53,
+              "Mangrove": 15.12,
+              "Salt marsh": 0.90,
+              "Tidal flat": 3.33
+            },
+            "2007": {
+              "Irrigated cropland": 7.38,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 0.36,
+              "Mangrove": 17.37,
+              "Salt marsh": 0.81,
+              "Tidal flat": 1.62
+            },
+            "2008": {
+              "Irrigated cropland": 6.39,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 0.36,
+              "Flooded flat": 0.0,
+              "Saline": 0.0,
+              "Mangrove": 17.10,
+              "Salt marsh": 0.81,
+              "Tidal flat": 2.78
+            },
+            "2009": {
+              "Irrigated cropland": 6.21,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 0.36,
+              "Flooded flat": 0.0,
+              "Saline": 0.0,
+              "Mangrove": 15.75,
+              "Salt marsh": 0.99,
+              "Tidal flat": 4.23
+            },
+            "2010": {
+              "Irrigated cropland": 7.11,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 0.63,
+              "Mangrove": 15.48,
+              "Salt marsh": 0.90,
+              "Tidal flat": 3.51
+            },
+            "2011": {
+              "Irrigated cropland": 6.12,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 0.72,
+              "Mangrove": 15.3,
+              "Salt marsh": 1.44,
+              "Tidal flat": 3.96
+            },
+            "2012": {
+              "Irrigated cropland": 6.84,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 1.35,
+              "Mangrove": 14.67,
+              "Salt marsh": 1.62,
+              "Tidal flat": 3.06
+            },
+            "2013": {
+              "Irrigated cropland": 6.21,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 1.98,
+              "Mangrove": 14.67,
+              "Salt marsh": 1.44,
+              "Tidal flat": 3.33
+            },
+            "2014": {
+              "Irrigated cropland": 6.03,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 0.90,
+              "Mangrove": 16.38,
+              "Salt marsh": 0.90,
+              "Tidal flat": 3.42
+            },
+            "2015": {
+              "Irrigated cropland": 5.94,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.18,
+              "Marsh": 1.44,
+              "Mangrove": 16.65,
+              "Salt marsh": 1.35,
+              "Tidal flat": 2.25
+            },
+            "2016": {
+              "Irrigated cropland": 6.03,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 0.99,
+              "Mangrove": 17.64,
+              "Salt marsh": 0.90,
+              "Tidal flat": 1.98
+            },
+            "2017": {
+              "Irrigated cropland": 6.57,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.62,
+              "Mangrove": 14.04,
+              "Salt marsh": 1.71,
+              "Tidal flat": 3.51
+            },
+            "2018": {
+              "Irrigated cropland": 6.03,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.26,
+              "Mangrove": 17.55,
+              "Salt marsh": 0.81,
+              "Tidal flat": 1.80
+            },
+            "2019": {
+              "Irrigated cropland": 5.94,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.62,
+              "Mangrove": 16.11,
+              "Salt marsh": 1.17,
+              "Tidal flat": 2.70
+            },
+            "2020": {
+              "Irrigated cropland": 6.48,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 1.26,
+              "Mangrove": 16.02,
+              "Salt marsh": 1.35,
+              "Tidal flat": 2.43
+            },
+            "2021": {
+              "Irrigated cropland": 6.48,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 0.27,
+              "Mangrove": 18.18,
+              "Salt marsh": 0.90,
+              "Tidal flat": 1.62
+            },
+            "2022": {
+              "Irrigated cropland": 6.75,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.27,
+              "Marsh": 0.81,
+              "Mangrove": 16.11,
+              "Salt marsh": 1.17,
+              "Tidal flat": 2.71
+            }
+          },
+          "lulc_transition_piechart": {
+            "unit": "ha",
+            "2000": {
+              "Bare areas": 2.52,
+              "Flooded flat": 1.80,
+              "Herbaceous cover cropland": 0.09,
+              "Impervious surfaces": 0.99,
+              "Irrigated cropland": 43.74,
+              "Mangrove": 9.27,
+              "Marsh": 0.81,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 1.62,
+              "Rainfed cropland": 1.53,
+              "Tidal flat": 1.71,
+              "Water body": 9.90
+            },
+            "2022": {
+              "Bare areas": 2.34,
+              "Flooded flat": 0.99,
+              "Herbaceous cover cropland": 0.09,
+              "Impervious surfaces": 0.99,
+              "Irrigated cropland": 47.43,
+              "Mangrove": 8.82,
+              "Marsh": 5.04,
+              "Open deciduous broadleaved forest (0.15<fc<0.4)": 0.54,
+              "Open evergreen needle-leaved forest (0.15< fc <0.4)": 0.18,
+              "Open mixed leaf forest (broadleaved and needle-leaved)": 0.90,
+              "Rainfed cropland": 0.81,
+              "Swamp": 0.18,
+              "Tidal flat": 2.25,
+              "Water body": 3.60
+            }
+          },
+          "surface_water_transition": {
+            "unit": "ha",
+            "Permanent": 0.45,
+            "Lost permanent": 9.63,
+            "Seasonal": 2.51,
+            "New seasonal": 0.36,
+            "Lost seasonal": 25.57,
+            "Permanent to seasonal": 2.02,
+            "Ephemeral seasonal": 4.27
+          },
+          "agb_tif_path": "path_to_tif_file",
+          "agb": 16128.12,
+          "agb_unit": "Mg",
+          "mean_agb": 48.65,
+          "mean_agb_unit": "Mg",
+          "cstock_agb": 16023.45,
+          "cstock_agb_unit": "Mg/ha",
+          "mean_cstock_agb": "26.43",
+          "mean_cstock_agb_unit": "Mg/ha",
+          "bgb": 7741.49,
+          "bgb_unit": "Mg",
+          "mean_bgb": 23.35,
+          "mean_bgb_unit": "Mg",
+          "cstock_bgb": 3414.87,
+          "cstock_bgb_unit": "Mg/ha",
+          "mean_cstock_bgb": 15.045,
+          "mean_cstock_bgb_unit": "Mg/ha",
+          "soil_properties": {
+            "sand": {
+              "unit": "%",
+              "0cm": 0.26,
+              "10cm": 0.25,
+              "30cm": 0.24,
+              "60cm": 0.23,
+              "100cm": 0.24,
+              "200cm": 0.26
+            },
+            "clay": {
+              "unit": "%",
+              "0cm": 0.32,
+              "10cm": 0.32,
+              "30cm": 0.34,
+              "60cm": 0.35,
+              "100cm": 0.36,
+              "200cm": 0.35
+            },
+            "organic_carbon": {
+              "unit": "%",
+              "0cm": 0.01,
+              "10cm": 0.02,
+              "30cm": 0.01,
+              "60cm": 0.01,
+              "100cm": 0.01,
+              "200cm": 0.01
+            }
+          },
+          "soc": {
+            "unit": "t/ha",
+            "0cm": 0.01,
+            "10cm": 0.82,
+            "30cm": 2.11,
+            "60cm": 2.80,
+            "100cm": 3.67,
+            "200cm": 6.42
+          }
+        },
+        {
+          "site_name": "Dwariknagar",
+          "type": "Conservation",
+          "aoi_path": "path_to_shape_file",
+          "total_area": 66.04,
+          "total_area_unit": "ha",
+          "total_plantation_area": "35.45",
+          "total_plantation_area_unit": "ha",
+          "total_planted_trees": 1500,
+          "lulc_timeseries": {
+            "unit": "ha",
+            "2000": {
+              "Marsh": 0.54,
+              "Mangrove": 60.66,
+              "Tidal flat": 7.92,
+              "Water body": 1.80
+            },
+            "2001": {
+              "Marsh": 0.45,
+              "Mangrove": 60.57,
+              "Tidal flat": 7.20,
+              "Water body": 2.79
+            },
+            "2002": {
+              "Swamp": 0.18,
+              "Marsh": 0.27,
+              "Mangrove": 60.93,
+              "Salt marsh": 0.18,
+              "Tidal flat": 7.02,
+              "Water body": 2.43
+            },
+            "2003": {
+              "Mangrove": 61.56,
+              "Salt marsh": 0.90,
+              "Tidal flat": 5.04,
+              "Water body": 3.42
+            },
+            "2004": {
+              "Marsh": 0.18,
+              "Mangrove": 62.19,
+              "Salt marsh": 0.54,
+              "Tidal flat": 4.50,
+              "Water body": 3.60
+            },
+            "2005": {
+              "Mangrove": 62.28,
+              "Salt marsh": 0.54,
+              "Tidal flat": 6.48,
+              "Water body": 1.71
+            },
+            "2006": {
+              "Mangrove": 62.46,
+              "Salt marsh": 1.26,
+              "Tidal flat": 5.76,
+              "Water body": 1.53
+            },
+            "2007": {
+              "Mangrove": 62.91,
+              "Salt marsh": 1.44,
+              "Tidal flat": 4.41,
+              "Water body": 2.25
+            },
+            "2008": {
+              "Mangrove": 63.09,
+              "Salt marsh": 2.25,
+              "Tidal flat": 4.32,
+              "Water body": 1.35
+            },
+            "2009": {
+              "Mangrove": 63.36,
+              "Salt marsh": 2.25,
+              "Tidal flat": 4.41,
+              "Water body": 0.99
+            },
+            "2010": {
+              "Mangrove": 63.81,
+              "Salt marsh": 2.79,
+              "Tidal flat": 3.78,
+              "Water body": 0.63
+            },
+            "2011": {
+              "Mangrove": 64.53,
+              "Salt marsh": 2.70,
+              "Tidal flat": 3.69,
+              "Water body": 0.1
+            },
+            "2012": {
+              "Mangrove": 64.35,
+              "Salt marsh": 3.24,
+              "Tidal flat": 3.42,
+              "Water body": 0.1
+            },
+            "2013": {
+              "Mangrove": 65.25,
+              "Salt marsh": 2.79,
+              "Tidal flat": 2.97,
+              "Water body": 0.1
+            },
+            "2014": {
+              "Swamp": 0.1,
+              "Mangrove": 65.34,
+              "Salt marsh": 2.88,
+              "Tidal flat": 2.70,
+              "Water body": 0.1
+            },
+            "2015": {
+              "Mangrove": 66.06,
+              "Salt marsh": 2.52,
+              "Tidal flat": 2.34,
+              "Water body": 0.1
+            },
+            "2016": {
+              "Marsh": 0.18,
+              "Mangrove": 66.33,
+              "Salt marsh": 2.70,
+              "Tidal flat": 1.80
+            },
+            "2017": {
+              "Marsh": 0.18,
+              "Mangrove": 66.33,
+              "Salt marsh": 3.51,
+              "Tidal flat": 0.99
+            },
+            "2018": {
+              "Swamp": 0.36,
+              "Marsh": 0.27,
+              "Mangrove": 66.51,
+              "Salt marsh": 3.15,
+              "Tidal flat": 0.72
+            },
+            "2019": {
+              "Marsh": 0.09,
+              "Mangrove": 67.59,
+              "Salt marsh": 2.79,
+              "Tidal flat": 0.54
+            },
+            "2020": {
+              "Mangrove": 67.86,
+              "Salt marsh": 2.61,
+              "Tidal flat": 0.54
+            },
+            "2021": {
+              "Swamp": 0.90,
+              "Marsh": 0.36,
+              "Mangrove": 67.05,
+              "Salt marsh": 2.16,
+              "Tidal flat": 0.54
+            },
+            "2022": {
+              "Swamp": 0.54,
+              "Marsh": 0.72,
+              "Mangrove": 67.05,
+              "Salt marsh": 1.98,
+              "Tidal flat": 0.72
+            }
+          },
+          "lulc_transition_piechart": {
+            "unit": "ha",
+            "2000": {
+              "Flooded flat": 0.09,
+              "Mangrove": 60.66,
+              "Marsh": 0.54,
+              "Tidal flat": 7.92,
+              "Water body": 1.80
+            },
+            "2022": {
+              "Mangrove": 67.05,
+              "Marsh": 0.72,
+              "Salt marsh": 1.98,
+              "Swamp": 0.54,
+              "Tidal flat": 0.72
+            }
+          },
+          "surface_water_transition": {
+            "unit": "ha",
+            "Permanent": 0.71,
+            "Lost permanent": 10.22,
+            "Lost seasonal": 5.50,
+            "Permanent to seasonal": 0.46,
+            "Ephemeral seasonal": 0.24
+          },
+          "agb_tif_path": "path_to_tif_file",
+          "agb": 43934.56,
+          "agb_unit": "Mg",
+          "mean_agb": 51.57,
+          "mean_agb_unit": "Mg",
+          "cstock_agb": 20649.24,
+          "cstock_agb_unit": "Mg/ha",
+          "mean_cstock_agb": 24.24,
+          "mean_cstock_agb_unit": "Mg/ha",
+          "bgb": 21088.58,
+          "bgb_unit": "Mg",
+          "mean_bgb": 24.75,
+          "mean_bgb_unit": "Mg",
+          "cstock_bgb": 9911.63,
+          "cstock_bgb_unit": "Mg/ha",
+          "mean_cstock_bgb": 11.63,
+          "mean_cstock_bgb_unit": "Mg/ha",
+          "soil_properties": {
+            "sand": {
+              "unit": "%",
+              "0cm": 0.38,
+              "10cm": 0.37,
+              "30cm": 0.35,
+              "60cm": 0.35,
+              "100cm": 0.36,
+              "200cm": 0.37
+            },
+            "clay": {
+              "unit": "%",
+              "0cm": 0.31,
+              "10cm": 0.32,
+              "30cm": 0.34,
+              "60cm": 0.36,
+              "100cm": 0.35,
+              "200cm": 0.34
+            },
+            "organic_carbon": {
+              "unit": "%",
+              "0cm": 0.02,
+              "10cm": 0.02,
+              "30cm": 0.01,
+              "60cm": 0.01,
+              "100cm": 0.01,
+              "200cm": 0.01
+            }
+          },
+          "soc": {
+            "unit": "t/ha",
+            "0cm": 0.01,
+            "10cm": 1.69,
+            "30cm": 2.25,
+            "60cm": 4.53,
+            "100cm": 4.58,
+            "200cm": 8.99
+          }
+        }
+      ],
+      "credits": {
+        "vcu": {
+          "2022": 0,
+          "2023": 622.2,
+          "2024": 2484.55,
+          "2025": 4944.45,
+          "2026": 6668.25,
+          "2027": 7964.5,
+          "2028": 10098,
+          "2029": 11815,
+          "2030": 12617.4,
+          "2031": 13388.35,
+          "2032": 14101.5,
+          "2033": 14844.4,
+          "2034": 15498.05,
+          "2035": 16091.35,
+          "2036": 16660,
+          "2037": 17195.5,
+          "2038": 17697,
+          "2039": 18181.5,
+          "2040": 18640.5,
+          "2041": 19082.5,
+          "2042": 9652.6
+        },
+        "buffer_units": {
+          "2022": 0,
+          "2023": 120,
+          "2024": 480,
+          "2025": 940,
+          "2026": 1320,
+          "2027": 1560,
+          "2028": 1980,
+          "2029": 2300,
+          "2030": 2440,
+          "2031": 2600,
+          "2032": 2740,
+          "2033": 2880,
+          "2034": 3000,
+          "2035": 3120,
+          "2036": 3240,
+          "2037": 3340,
+          "2038": 3440,
+          "2039": 3540,
+          "2040": 3640,
+          "2041": 3720,
+          "2042": 1840
+        },
+        "estimated_issued_vcu": {
+          "2022": 0,
+          "2023": 480,
+          "2024": 1920,
+          "2025": 3760,
+          "2026": 5280,
+          "2027": 6240,
+          "2028": 7920,
+          "2029": 9200,
+          "2030": 9760,
+          "2031": 10400,
+          "2032": 10960,
+          "2033": 11520,
+          "2034": 12000,
+          "2035": 12480,
+          "2036": 12960,
+          "2037": 13360,
+          "2038": 13760,
+          "2039": 14160,
+          "2040": 14560,
+          "2041": 14880,
+          "2042": 7360
+        },
+        "estimated_retired_vcu": {
+          "2022": 0,
+          "2023": 192,
+          "2024": 960,
+          "2025": 2068,
+          "2026": 3168,
+          "2027": 4056,
+          "2028": 5544,
+          "2029": 6440,
+          "2030": 7320,
+          "2031": 7800,
+          "2032": 8220,
+          "2033": 9216,
+          "2034": 9600,
+          "2035": 10608,
+          "2036": 11016,
+          "2037": 11356,
+          "2038": 12384,
+          "2039": 12744,
+          "2040": 13104,
+          "2041": 13392,
+          "2042": 6624
+        },
+        "total_estimated_issued_vcu": 2400,
+        "average_price_per_vcu": "$25",
+        "vcu_available_for_sale": 1455,
+        "total_vcu_retired": 945
+      }
+    }
+  ],
+  "Environmental": [
+    {
+      "project_name": "Mangrove Plantation Initiative in Sundarbans, India",
+      "project_id": "N/A",
+      "total_area": "160.55 ha",
+      "number_of_sites": "3",
+      "project_site_map": "path_to_shape_file",
+      "Overall_risk_score": "6.7",
+      "Overall_risk_category": "Moderate",
+      "Value_at_risk": "6.4M USD",
+      "Chronic_risks": [
+        {
+          "Flood_risk": "Moderately_High",
+          "Sea Sea_level_rise_risk": "Moderately_High",
+          "Extreme_heat_risk": "Low",
+          "Drought_risk": "Low"
+        }
+      ],
+      "Acute_risks": [
+        {
+          "Extreme_precipitation_risk": "High",
+          "Wildfire_risk": "Moderate",
+          "Extreme_cold_risk": "Low",
+          "Landslide_risk": "Low",
+          "Tropical_cyclone_risk": "High"
+        }
+      ],
+      "Climate_Projections": [
+        {
+          "Optimistic_Scenario": {
+            "Near_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+0.2%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+1.5%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+10%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-3",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+0.3%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+2",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+10%",
+                "unit": "m"
+              }
+            },
+            "Mid_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+0.4%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+3.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+20%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-6",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+0.6%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+4",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+15%",
+                "unit": "m"
+              }
+            },
+            "Long_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+0.8%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+5.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+30%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-10",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+1.0%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+6",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+25%",
+                "unit": "m"
+              }
+            }
+          },
+          "Intermediate_Scenario": {
+            "Near_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+0.5%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+2.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+15%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-4",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+0.5%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+3",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+10%",
+                "unit": "m"
+              }
+            },
+            "Mid_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+0.8%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+4.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+25%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-8",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+0.8%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+5",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+20%",
+                "unit": "m"
+              }
+            },
+            "Long_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+1.2%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+6.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+35%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-12",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+1.5%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+7",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+30%",
+                "unit": "m"
+              }
+            }
+          },
+          "Extreme_Scenario": {
+            "Near_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+1.0%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+3.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+20%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-5",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+0.7%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+4",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+15%",
+                "unit": "m"
+              }
+            },
+            "Mid_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+1.5%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+5.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+30%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-10",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+1.0%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+6",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+25%",
+                "unit": "m"
+              }
+            },
+            "Long_Term": {
+              "Sea_Level_Rise": {
+                "percentage_change": "+2.0%",
+                "unit": "m"
+              },
+              "Total_Precipitation": {
+                "percentage_change": "+8.0%",
+                "unit": "%"
+              },
+              "Maximum_1_Day_Precipitation": {
+                "percentage_change": "+50%",
+                "unit": "mm"
+              },
+              "Consecutive_Dry_Days": {
+                "change": "-15",
+                "unit": "days"
+              },
+              "Mean_Temperature": {
+                "percentage_change": "+2.0%",
+                "unit": "°C"
+              },
+              "Cyclone_Frequency": {
+                "change": "+8",
+                "unit": "cyclones"
+              },
+              "Storm_Surge_Height": {
+                "percentage_change": "+40%",
+                "unit": "m"
+              }
+            }
+          }
+        }
+      ],
+      "sites": [
+        {
+          "site_name": "Tipligheri",
+          "type": "Restoration",
+          "area": "68.83 ha",
+          "path": "path_to_shape_file",
+          "site_risk_score": "6.5",
+          "site_risk_category": "Moderate",
+          "Chronic_risks": [
+            {
+              "Flood_risk": "Moderately_High",
+              "Sea Sea_level_rise_risk": "Moderately_High",
+              "Extreme_heat_risk": "Low",
+              "Drought_risk": "Low"
+            }
+          ],
+          "Acute_risks": [
+            {
+              "Extreme_precipitation_risk": "High",
+              "Wildfire_risk": "Moderate",
+              "Extreme_cold_risk": "Low",
+              "Landslide_risk": "Low",
+              "Tropical_cyclone_risk": "High"
+            }
+          ],
+          "Climate_Projections": [
+            {
+              "Optimistic_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.2%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+1.5%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+10%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-3",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.3%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+2",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+10%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.4%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+3.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+20%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-6",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.6%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+4",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+15%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.8%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+5.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+30%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-10",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+6",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+25%",
+                    "unit": "m"
+                  }
+                }
+              },
+              "Intermediate_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.5%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+2.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+15%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-4",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.5%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+3",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+10%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.8%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+4.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+25%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-8",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.8%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+5",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+20%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.2%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+6.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+35%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-12",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.5%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+7",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+30%",
+                    "unit": "m"
+                  }
+                }
+              },
+              "Extreme_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.0%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+3.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+20%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-5",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.7%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+4",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+15%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.5%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+5.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+30%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-10",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+6",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+25%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+2.0%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+8.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+50%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-15",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+2.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+8",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+40%",
+                    "unit": "m"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "site_name": "Maipith",
+          "type": "Restoration",
+          "area": "25.68 ha",
+          "path": "path_to_shape_file",
+          "site_risk_score": "6.9",
+          "site_risk_category": "Moderate",
+          "Chronic_risks": [
+            {
+              "Flood_risk": "Moderately_High",
+              "Sea Sea_level_rise_risk": "Moderately_High",
+              "Extreme_heat_risk": "Low",
+              "Drought_risk": "Low"
+            }
+          ],
+          "Acute_risks": [
+            {
+              "Extreme_precipitation_risk": "High",
+              "Wildfire_risk": "Moderate",
+              "Extreme_cold_risk": "Low",
+              "Landslide_risk": "Low",
+              "Tropical_cyclone_risk": "High"
+            }
+          ],
+          "Climate_Projections": [
+            {
+              "Optimistic_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.2%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+1.5%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+10%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-3",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.3%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+2",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+10%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.4%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+3.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+20%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-6",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.6%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+4",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+15%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.8%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+5.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+30%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-10",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+6",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+25%",
+                    "unit": "m"
+                  }
+                }
+              },
+              "Intermediate_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.5%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+2.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+15%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-4",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.5%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+3",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+10%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.8%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+4.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+25%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-8",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.8%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+5",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+20%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.2%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+6.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+35%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-12",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.5%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+7",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+30%",
+                    "unit": "m"
+                  }
+                }
+              },
+              "Extreme_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.0%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+3.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+20%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-5",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.7%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+4",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+15%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.5%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+5.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+30%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-10",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+6",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+25%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+2.0%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+8.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+50%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-15",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+2.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+8",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+40%",
+                    "unit": "m"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "site_name": "Dwariknagar",
+          "type": "Conservation",
+          "area": "66.04 ha",
+          "path": "path_to_shape_file",
+          "site_risk_score": "6.3",
+          "site_risk_category": "Moderate",
+          "Chronic_risks": [
+            {
+              "Flood_risk": "Moderately_High",
+              "Sea Sea_level_rise_risk": "Moderately_High",
+              "Extreme_heat_risk": "Low",
+              "Drought_risk": "Low"
+            }
+          ],
+          "Acute_risks": [
+            {
+              "Extreme_precipitation_risk": "High",
+              "Wildfire_risk": "Moderate",
+              "Extreme_cold_risk": "Low",
+              "Landslide_risk": "Low",
+              "Tropical_cyclone_risk": "High"
+            }
+          ],
+          "Climate_Projections": [
+            {
+              "Optimistic_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.2%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+1.5%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+10%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-3",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.3%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+2",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+10%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.4%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+3.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+20%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-6",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.6%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+4",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+15%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.8%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+5.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+30%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-10",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+6",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+25%",
+                    "unit": "m"
+                  }
+                }
+              },
+              "Intermediate_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.5%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+2.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+15%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-4",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.5%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+3",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+10%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+0.8%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+4.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+25%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-8",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.8%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+5",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+20%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.2%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+6.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+35%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-12",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.5%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+7",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+30%",
+                    "unit": "m"
+                  }
+                }
+              },
+              "Extreme_Scenario": {
+                "Near_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.0%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+3.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+20%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-5",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+0.7%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+4",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+15%",
+                    "unit": "m"
+                  }
+                },
+                "Mid_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+1.5%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+5.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+30%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-10",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+1.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+6",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+25%",
+                    "unit": "m"
+                  }
+                },
+                "Long_Term": {
+                  "Sea_Level_Rise": {
+                    "percentage_change": "+2.0%",
+                    "unit": "m"
+                  },
+                  "Total_Precipitation": {
+                    "percentage_change": "+8.0%",
+                    "unit": "%"
+                  },
+                  "Maximum_1_Day_Precipitation": {
+                    "percentage_change": "+50%",
+                    "unit": "mm"
+                  },
+                  "Consecutive_Dry_Days": {
+                    "change": "-15",
+                    "unit": "days"
+                  },
+                  "Mean_Temperature": {
+                    "percentage_change": "+2.0%",
+                    "unit": "°C"
+                  },
+                  "Cyclone_Frequency": {
+                    "change": "+8",
+                    "unit": "cyclones"
+                  },
+                  "Storm_Surge_Height": {
+                    "percentage_change": "+40%",
+                    "unit": "m"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
