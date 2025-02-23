@@ -1,0 +1,39 @@
+ERROR
+Cannot convert undefined or null to object
+TypeError: Cannot convert undefined or null to object
+    at Function.entries (<anonymous>)
+    at CarbonDashboard (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:7211:34)
+    at renderWithHooks (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:132518:22)
+    at mountIndeterminateComponent (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:136489:17)
+    at beginWork (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:137792:20)
+    at HTMLUnknownElement.callCallback (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:122774:18)
+    at Object.invokeGuardedCallbackDev (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:122818:20)
+    at invokeGuardedCallback (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:122875:35)
+    at beginWork$1 (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:142773:11)
+    at performUnitOfWork (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:142021:16)
+ERROR
+Cannot convert undefined or null to object
+TypeError: Cannot convert undefined or null to object
+    at Function.entries (<anonymous>)
+    at CarbonDashboard (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:7211:34)
+    at renderWithHooks (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:132518:22)
+    at mountIndeterminateComponent (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:136489:17)
+    at beginWork (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:137792:20)
+    at HTMLUnknownElement.callCallback (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:122774:18)
+    at Object.invokeGuardedCallbackDev (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:122818:20)
+    at invokeGuardedCallback (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:122875:35)
+    at beginWork$1 (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:142773:11)
+    at performUnitOfWork (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:142021:16)
+ERROR
+Cannot convert undefined or null to object
+TypeError: Cannot convert undefined or null to object
+    at Function.entries (<anonymous>)
+    at CarbonDashboard (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:7211:34)
+    at renderWithHooks (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:132518:22)
+    at mountIndeterminateComponent (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:136489:17)
+    at beginWork (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:137792:20)
+    at beginWork$1 (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:142751:18)
+    at performUnitOfWork (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:142021:16)
+    at workLoopSync (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:141944:9)
+    at renderRootSync (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:141917:11)
+    at recoverFromConcurrentError (https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/static/js/bundle.js:141409:24)
