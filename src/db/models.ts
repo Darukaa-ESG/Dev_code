@@ -164,7 +164,61 @@ import data from "../db.json";
 
 export const db = {
   async getProjects(): Promise<Project[]> {
-    return data.ProjectList;
+    const query = 'SELECT * FROM projects';
+    return await pool.query(query);
+  },
+
+  async createProject(projectData: any): Promise<Project> {
+    const query = `
+      INSERT INTO projects (
+        name, project_identifier, project_start_date, project_end_date,
+        status, country, description, project_type, total_area,
+        emission_reduction_unit, total_emission_reduction, avg_annual_emission_reduction,
+        crediting_period, project_developer, registry
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
+      RETURNING *
+    `;
+    
+    const values = [
+      projectData.name,
+      projectData.project_identifier,
+      projectData.start_date,
+      projectData.end_date,
+      projectData.status,
+      projectData.country,
+      projectData.description,
+      projectData.project_type,
+      projectData.total_area,
+      projectData.emission_reduction_unit,
+      projectData.total_emission_reduction,
+      projectData.avg_annual_emission_reduction,
+      projectData.crediting_period,
+      projectData.project_developer,
+      projectData.registry
+    ];
+
+    const result = await pool.query(query, values);
+    return result.rows[0];
+  },
+
+  async createSite(siteData: any): Promise<Site> {
+    const query = `
+      INSERT INTO sites (
+        project_id, name, type, area, boundary
+      ) VALUES ($1, $2, $3, $4, ST_GeomFromGeoJSON($5))
+      RETURNING *
+    `;
+    
+    const values = [
+      siteData.project_id,
+      siteData.name,
+      siteData.type,
+      siteData.area,
+      siteData.boundary
+    ];
+
+    const result = await pool.query(query, values);
+    return result.rows[0];
   },
 
   async getProjectById(id: number): Promise<Project> {
