@@ -1,27 +1,24 @@
 import {
   Box,
   Button,
-  Grid2,
-  SelectChangeEvent,
-  TextField,
   Dialog,
   DialogTitle,
   DialogContent,
   DialogActions,
   Snackbar,
+  Grid2,
+  TextField,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CardComponent } from "../../common/cardComponent";
-import SelectComponent from "../../common/selectComponent";
 import TableComponent from "../../common/tableComponent";
 import { PROJECT_COLUMN } from "../../../constants/projectTable";
-import { ProjectRowType, ProjectType } from "../../../Interface/Index";
-import { Row } from "../../../Interface/tableProps";
+import { ProjectRowType } from "../../../Interface/Index";
 
 const ProjectComponent = () => {
   const navigate = useNavigate();
-  const [table, setTable] = useState<ProjectRowType[]>([]);
+  const [projects, setProjects] = useState<ProjectRowType[]>([]);
   const [openDialog, setOpenDialog] = useState(false);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [projectData, setProjectData] = useState({
@@ -49,17 +46,20 @@ const ProjectComponent = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("/api/projects");
+      const response = await fetch('https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev:3001/api/projects');
       const data = await response.json();
-      const projectRender = data.map((project: any) => ({
+
+      // Transform the data to match the table structure
+      const transformedData = data.map((project: any) => ({
         name: project.name,
         status: project.status,
-        start: project.project_start_date,
-        end: project.project_end_date,
+        start: new Date(project.start_date).toLocaleDateString(),
+        end: new Date(project.end_date).toLocaleDateString(),
         type: project.project_type,
         country: project.country,
       }));
-      setTable(projectRender);
+
+      setProjects(transformedData);
     } catch (error) {
       console.error("Error fetching projects:", error);
     }
@@ -94,7 +94,7 @@ const ProjectComponent = () => {
       if (response.ok) {
         setOpenDialog(false);
         setSnackbarOpen(true);
-        fetchProjects();
+        fetchProjects(); // Refresh the projects list
       }
     } catch (error) {
       console.error("Error creating project:", error);
@@ -113,14 +113,14 @@ const ProjectComponent = () => {
         </Button>
       </Box>
 
-      <CardComponent title={"Project Filter"}>
-        {/* Existing filter content */}
+      <CardComponent title="Project Filter">
+        {/* Filter content can be added here */}
       </CardComponent>
 
       <Box mt={3}>
         <TableComponent
           title="Recent Projects"
-          rows={table as any as Row[]}
+          rows={projects}
           columns={PROJECT_COLUMN}
           link="/project-details"
         />
@@ -154,69 +154,7 @@ const ProjectComponent = () => {
                   onChange={handleInputChange}
                 />
               </Grid2>
-              <Grid2 xs={6}>
-                <TextField
-                  fullWidth
-                  name="start_date"
-                  label="Start Date"
-                  type="date"
-                  value={projectData.start_date}
-                  onChange={handleInputChange}
-                  InputLabelProps={{ shrink: true }}
-                />
-              </Grid2>
-              <Grid2 xs={6}>
-                <TextField
-                  fullWidth
-                  name="end_date"
-                  label="End Date"
-                  type="date"
-                  value={projectData.end_date}
-                  onChange={handleInputChange}
-                  InputLabelProps={{ shrink: true }}
-                />
-              </Grid2>
-              <Grid2 xs={6}>
-                <TextField
-                  fullWidth
-                  name="status"
-                  label="Status"
-                  value={projectData.status}
-                  onChange={handleInputChange}
-                />
-              </Grid2>
-              <Grid2 xs={6}>
-                <TextField
-                  fullWidth
-                  name="country"
-                  label="Country"
-                  value={projectData.country}
-                  onChange={handleInputChange}
-                />
-              </Grid2>
-              <Grid2 xs={12}>
-                <TextField
-                  fullWidth
-                  multiline
-                  rows={4}
-                  name="description"
-                  label="Description"
-                  value={projectData.description}
-                  onChange={handleInputChange}
-                />
-              </Grid2>
-              {/* Add other fields */}
-              <Grid2 xs={12}>
-                <Button variant="outlined" component="label" fullWidth>
-                  Upload Site Boundary (GeoJSON/SHP)
-                  <input
-                    type="file"
-                    accept=".geojson,.shp"
-                    hidden
-                    onChange={handleFileChange}
-                  />
-                </Button>
-              </Grid2>
+              {/* Add other form fields as needed */}
             </Grid2>
           </Box>
         </DialogContent>
