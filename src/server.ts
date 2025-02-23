@@ -7,7 +7,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(cors({
-  origin: '*',
+  origin: 'https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev',
+  credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 }));

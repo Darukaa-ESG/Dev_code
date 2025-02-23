@@ -12,7 +12,11 @@ const frontend = spawn('react-scripts', ['start'], {
 const backend = spawn('ts-node', ['--transpile-only', 'src/server.ts'], {
   stdio: 'inherit',
   shell: true,
-  env: { ...process.env, PORT: '3001' }
+  env: { 
+    ...process.env, 
+    PORT: '3001',
+    NODE_ENV: 'development'
+  }
 });
 
 process.on('SIGINT', () => {

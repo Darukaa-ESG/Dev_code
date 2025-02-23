@@ -49,7 +49,7 @@ const ProjectComponent = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("http://0.0.0.0:3001/api/projects");
+      const response = await fetch("https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev/api/projects");
       const data = await response.json();
       const projectRender = data.map((project: any) => ({
         name: project.name,
