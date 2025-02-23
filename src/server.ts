@@ -6,15 +6,25 @@ const { Pool } = require('pg');
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}));
+
 app.use(express.json());
 
 const pool = new Pool({
   user: 'postgres',
-  host: 'localhost',
+  host: '0.0.0.0',
   database: 'postgres',
   password: 'postgres',
   port: 5432,
+});
+
+// Test endpoint
+app.get('/api/test', (req, res) => {
+  res.json({ message: 'Server is running' });
 });
 
 app.get('/api/projects', async (req, res) => {
