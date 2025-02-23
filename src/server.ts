@@ -10,14 +10,15 @@ const port = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-// API Routes
-import projectsRouter from "./api/projects";
-// Add logging middleware
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
 });
 
+// API Routes
+import projectsRouter from "./api/projects";
+
+// Handle API routes first
 app.use("/api/projects", projectsRouter);
 
 // Test endpoint
@@ -31,9 +32,7 @@ app.use(express.static(path.join(__dirname, "../build")));
 
 // Catch-all route for React app
 app.get("*", (req, res) => {
-  if (!req.path.startsWith("/api/")) {
-    res.sendFile(path.join(__dirname, "../build", "index.html"));
-  }
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
 app.listen(port, "0.0.0.0", () => {
