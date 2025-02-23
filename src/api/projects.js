@@ -31,9 +31,12 @@ router.get("/", async (req, res) => {
 
 router.post("/", upload.array("boundaryFiles"), async (req, res) => {
   try {
+    if (!req.body.projectData || !req.body.sitesData) {
+      return res.status(400).json({ error: "Missing required data" });
+    }
     const projectData = JSON.parse(req.body.projectData);
     const sitesData = JSON.parse(req.body.sitesData);
-    const files = req.files;
+    const files = req.files || [];
 
     await pool.query("BEGIN");
 
@@ -51,8 +54,8 @@ router.post("/", upload.array("boundaryFiles"), async (req, res) => {
         projectData.country,
         projectData.description,
         projectData.project_type,
-        projectData.number_of_sites
-      ]
+        projectData.number_of_sites,
+      ],
     );
 
     const projectId = projectResult.rows[0].id;
@@ -70,8 +73,8 @@ router.post("/", upload.array("boundaryFiles"), async (req, res) => {
           projectId,
           site.name,
           site.type,
-          boundaryFile ? boundaryFile.path : null
-        ]
+          boundaryFile ? boundaryFile.path : null,
+        ],
       );
     }
 
