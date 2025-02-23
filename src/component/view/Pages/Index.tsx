@@ -1,8 +1,18 @@
-
-import { Box, Button, Grid2, SelectChangeEvent, TextField, Dialog, DialogTitle, DialogContent, DialogActions, Snackbar } from "@mui/material"
+import {
+  Box,
+  Button,
+  Grid2,
+  SelectChangeEvent,
+  TextField,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Snackbar,
+} from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CardComponent } from "../../common/cardComponent"
+import { CardComponent } from "../../common/cardComponent";
 import SelectComponent from "../../common/selectComponent";
 import TableComponent from "../../common/tableComponent";
 import { PROJECT_COLUMN } from "../../../constants/projectTable";
@@ -15,21 +25,21 @@ const ProjectComponent = () => {
   const [openDialog, setOpenDialog] = useState(false);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [projectData, setProjectData] = useState({
-    name: '',
-    project_identifier: '',
-    start_date: '',
-    end_date: '',
-    status: '',
-    country: '',
-    description: '',
-    project_type: '',
-    total_area: '',
-    emission_reduction_unit: '',
-    total_emission_reduction: '',
-    avg_annual_emission_reduction: '',
-    crediting_period: '',
-    project_developer: '',
-    registry: ''
+    name: "",
+    project_identifier: "",
+    start_date: "",
+    end_date: "",
+    status: "",
+    country: "",
+    description: "",
+    project_type: "",
+    total_area: "",
+    emission_reduction_unit: "",
+    total_emission_reduction: "",
+    avg_annual_emission_reduction: "",
+    crediting_period: "",
+    project_developer: "",
+    registry: "",
   });
   const [siteFile, setSiteFile] = useState<File | null>(null);
 
@@ -39,7 +49,7 @@ const ProjectComponent = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('http://0.0.0.0:3001/api/projects');
+      const response = await fetch("/api/projects");
       const data = await response.json();
       const projectRender = data.map((project: any) => ({
         name: project.name,
@@ -51,14 +61,14 @@ const ProjectComponent = () => {
       }));
       setTable(projectRender);
     } catch (error) {
-      console.error('Error fetching projects:', error);
+      console.error("Error fetching projects:", error);
     }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setProjectData({
       ...projectData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -70,15 +80,15 @@ const ProjectComponent = () => {
 
   const handleSubmit = async () => {
     const formData = new FormData();
-    formData.append('projectData', JSON.stringify(projectData));
+    formData.append("projectData", JSON.stringify(projectData));
     if (siteFile) {
-      formData.append('siteFile', siteFile);
+      formData.append("siteFile", siteFile);
     }
 
     try {
-      const response = await fetch('/api/projects', {
-        method: 'POST',
-        body: formData
+      const response = await fetch("/api/projects", {
+        method: "POST",
+        body: formData,
       });
 
       if (response.ok) {
@@ -87,23 +97,23 @@ const ProjectComponent = () => {
         fetchProjects();
       }
     } catch (error) {
-      console.error('Error creating project:', error);
+      console.error("Error creating project:", error);
     }
   };
 
   return (
     <Box>
       <Box mb={2} display="flex" justifyContent="flex-end">
-        <Button 
-          variant="contained" 
-          color="primary" 
+        <Button
+          variant="contained"
+          color="primary"
           onClick={() => setOpenDialog(true)}
         >
           Create New Project
         </Button>
       </Box>
 
-      <CardComponent title={'Project Filter'}>
+      <CardComponent title={"Project Filter"}>
         {/* Existing filter content */}
       </CardComponent>
 
@@ -116,7 +126,12 @@ const ProjectComponent = () => {
         />
       </Box>
 
-      <Dialog open={openDialog} onClose={() => setOpenDialog(false)} maxWidth="md" fullWidth>
+      <Dialog
+        open={openDialog}
+        onClose={() => setOpenDialog(false)}
+        maxWidth="md"
+        fullWidth
+      >
         <DialogTitle>Create New Project</DialogTitle>
         <DialogContent>
           <Box component="form" sx={{ mt: 2 }}>
@@ -192,11 +207,7 @@ const ProjectComponent = () => {
               </Grid2>
               {/* Add other fields */}
               <Grid2 xs={12}>
-                <Button
-                  variant="outlined"
-                  component="label"
-                  fullWidth
-                >
+                <Button variant="outlined" component="label" fullWidth>
                   Upload Site Boundary (GeoJSON/SHP)
                   <input
                     type="file"
@@ -211,7 +222,9 @@ const ProjectComponent = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setOpenDialog(false)}>Cancel</Button>
-          <Button onClick={handleSubmit} variant="contained">Create</Button>
+          <Button onClick={handleSubmit} variant="contained">
+            Create
+          </Button>
         </DialogActions>
       </Dialog>
 
