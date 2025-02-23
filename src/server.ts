@@ -8,13 +8,19 @@ const port = process.env.PORT || 3001;
 const upload = multer({ dest: "uploads/" });
 
 // Configure CORS
-app.use(cors({
-  origin: process.env.REPLIT_ENVIRONMENT === 'production' 
-    ? process.env.REPLIT_URL 
-    : 'https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev',
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
+
+// Add error handling middleware
+app.use((err: any, req: any, res: any, next: any) => {
+  console.error(err.stack);
+  res.status(500).json({ error: 'Something broke!' });
+});
+
+// Add health check endpoint
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
 
 // Database connection
 const pool = new Pool({
