@@ -49,7 +49,7 @@ const ProjectComponent = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("/api/projects");
+      const response = await fetch("http://0.0.0.0:3001/api/projects");
       const data = await response.json();
       const projectRender = data.map((project: any) => ({
         name: project.name,
