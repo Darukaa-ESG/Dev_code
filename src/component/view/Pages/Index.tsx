@@ -19,6 +19,8 @@ import { ProjectRowType } from "../../../Interface/Index";
 
 const ProjectComponent = () => {
   const navigate = useNavigate();
+  // Store the complete API data and the filtered display data separately.
+  const [allProjects, setAllProjects] = useState<any[]>([]);
   const [projects, setProjects] = useState<ProjectRowType[]>([]);
   const [openDialog, setOpenDialog] = useState(false);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
@@ -40,7 +42,20 @@ const ProjectComponent = () => {
     registry: "",
   });
   const [siteFile, setSiteFile] = useState<File | null>(null);
-  const [filters, setFilters] = useState({ name: '', status: '', type: '' }); // Added filters state
+
+  // Filter state – these are the currently selected filter values.
+  const [selectedProject, setSelectedProject] = useState("");
+  const [selectedRegistry, setSelectedRegistry] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedType, setSelectedType] = useState("");
+
+  // These states hold the available options derived from API data.
+  const [filterOptions, setFilterOptions] = useState({
+    projects: [] as string[],
+    registries: [] as string[],
+    countries: [] as string[],
+    types: [] as string[],
+  });
 
   useEffect(() => {
     fetchProjects();
@@ -48,15 +63,45 @@ const ProjectComponent = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch('https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev:3001/api/projects');
+      // Replace the URL with your API endpoint as needed.
+      const response = await fetch(
+        "https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev:3001/api/projects",
+      );
       const data = await response.json();
+      setAllProjects(data);
 
-      // Transform the data to match the table structure
+      // Derive filter options from API response.
+      const projectNames = Array.from(
+        new Set(data.map((p: any) => p.name)),
+      ) as string[];
+      const registryNames = Array.from(
+        new Set(data.map((p: any) => p.registry)),
+      ).sort();
+      const countryNames = Array.from(
+        new Set(data.map((p: any) => p.country)),
+      ).sort();
+      const typeNames = Array.from(
+        new Set(data.map((p: any) => p.project_type)),
+      ).sort();
+
+      setFilterOptions({
+        projects: projectNames,
+        registries: registryNames,
+        countries: countryNames,
+        types: typeNames,
+      });
+
+      // Transform the API data for display in the table.
       const transformedData = data.map((project: any) => ({
+        id: project.id!, // using non-null assertion if you're sure it exists
         name: project.name,
         status: project.status,
-        start: project.project_start_date ? new Date(project.project_start_date).toLocaleDateString() : 'N/A',
-        end: project.project_end_date ? new Date(project.project_end_date).toLocaleDateString() : 'N/A',
+        start: project.project_start_date
+          ? new Date(project.project_start_date).toLocaleDateString()
+          : "N/A",
+        end: project.project_end_date
+          ? new Date(project.project_end_date).toLocaleDateString()
+          : "N/A",
         type: project.project_type,
         country: project.country,
       }));
@@ -67,6 +112,7 @@ const ProjectComponent = () => {
     }
   };
 
+  // Handlers for form input changes in the Create Project dialog.
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setProjectData({
       ...projectData,
@@ -80,9 +126,65 @@ const ProjectComponent = () => {
     }
   };
 
-  const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setFilters({ ...filters, [e.target.name]: e.target.value });
-  }; // Added filter handler
+  // Handle filter dropdown changes.
+  const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    if (name === "project") setSelectedProject(value);
+    else if (name === "registry") setSelectedRegistry(value);
+    else if (name === "country") setSelectedCountry(value);
+    else if (name === "type") setSelectedType(value);
+  };
+
+  // Apply the filter options by filtering the full project list.
+  const applyFilters = () => {
+    const filtered = allProjects.filter((project) => {
+      return (
+        (!selectedProject || project.name === selectedProject) &&
+        (!selectedRegistry || project.registry === selectedRegistry) &&
+        (!selectedCountry || project.country === selectedCountry) &&
+        (!selectedType || project.project_type === selectedType)
+      );
+    });
+
+    const transformedData = filtered.map((project: any) => ({
+      id: project.id, // include id for table row keys
+      name: project.name,
+      status: project.status,
+      start: project.project_start_date
+        ? new Date(project.project_start_date).toLocaleDateString()
+        : "N/A",
+      end: project.project_end_date
+        ? new Date(project.project_end_date).toLocaleDateString()
+        : "N/A",
+      type: project.project_type,
+      country: project.country,
+    }));
+
+    setProjects(transformedData);
+  };
+
+  // Reset filters and show all projects.
+  const resetFilters = () => {
+    setSelectedProject("");
+    setSelectedRegistry("");
+    setSelectedCountry("");
+    setSelectedType("");
+
+    const transformedData = allProjects.map((project: any) => ({
+      id: project.id,
+      name: project.name,
+      status: project.status,
+      start: project.project_start_date
+        ? new Date(project.project_start_date).toLocaleDateString()
+        : "N/A",
+      end: project.project_end_date
+        ? new Date(project.project_end_date).toLocaleDateString()
+        : "N/A",
+      type: project.project_type,
+      country: project.country,
+    }));
+    setProjects(transformedData);
+  };
 
   const handleSubmit = async () => {
     const formData = new FormData();
@@ -100,7 +202,7 @@ const ProjectComponent = () => {
       if (response.ok) {
         setOpenDialog(false);
         setSnackbarOpen(true);
-        fetchProjects(); // Refresh the projects list
+        fetchProjects(); // Refresh the projects list (and filter options) after adding a new project.
       }
     } catch (error) {
       console.error("Error creating project:", error);
@@ -122,35 +224,64 @@ const ProjectComponent = () => {
       <CardComponent title="Project Filter">
         <Box sx={{ p: 2 }}>
           <Grid2 container spacing={2}>
-            <Grid2 xs={12} md={4}>
-              <TextField
-                fullWidth
-                name="name"
-                label="Search by Name"
-                variant="outlined"
-                size="small"
-                value={filters.name}
-                onChange={handleFilterChange}
-              />
-            </Grid2>
-            <Grid2 xs={12} md={4}>
+            <Grid2 component="div" xs={12} md={3}>
               <TextField
                 select
                 fullWidth
-                name="status"
-                label="Project Status"
+                name="project"
+                label="Project"
                 variant="outlined"
                 size="small"
-                value={filters.status}
+                value={selectedProject}
                 onChange={handleFilterChange}
               >
                 <MenuItem value="">All</MenuItem>
-                <MenuItem value="Under development">Under development</MenuItem>
-                <MenuItem value="Registered">Registered</MenuItem>
-                <MenuItem value="In Progress">In Progress</MenuItem>
+                {filterOptions.projects.map((proj) => (
+                  <MenuItem key={proj} value={proj}>
+                    {proj}
+                  </MenuItem>
+                ))}
               </TextField>
             </Grid2>
-            <Grid2 xs={12} md={4}>
+            <Grid2 component="div" xs={12} md={3}>
+              <TextField
+                select
+                fullWidth
+                name="registry"
+                label="Registry Name"
+                variant="outlined"
+                size="small"
+                value={selectedRegistry}
+                onChange={handleFilterChange}
+              >
+                <MenuItem value="">All</MenuItem>
+                {filterOptions.registries.map((reg) => (
+                  <MenuItem key={reg} value={reg}>
+                    {reg}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </Grid2>
+            <Grid2 component="div" xs={12} md={3}>
+              <TextField
+                select
+                fullWidth
+                name="country"
+                label="Country"
+                variant="outlined"
+                size="small"
+                value={selectedCountry}
+                onChange={handleFilterChange}
+              >
+                <MenuItem value="">All</MenuItem>
+                {filterOptions.countries.map((ctry) => (
+                  <MenuItem key={ctry} value={ctry}>
+                    {ctry}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </Grid2>
+            <Grid2 component="div" xs={12} md={3}>
               <TextField
                 select
                 fullWidth
@@ -158,15 +289,28 @@ const ProjectComponent = () => {
                 label="Project Type"
                 variant="outlined"
                 size="small"
-                value={filters.type}
+                value={selectedType}
                 onChange={handleFilterChange}
               >
                 <MenuItem value="">All</MenuItem>
-                <MenuItem value="ARR/WRC">ARR/WRC</MenuItem>
-                <MenuItem value="Conservation">Conservation</MenuItem>
+                {filterOptions.types.map((typ) => (
+                  <MenuItem key={typ} value={typ}>
+                    {typ}
+                  </MenuItem>
+                ))}
               </TextField>
             </Grid2>
           </Grid2>
+          <Box
+            sx={{ display: "flex", justifyContent: "flex-end", gap: 2, mt: 2 }}
+          >
+            <Button variant="outlined" onClick={resetFilters}>
+              Reset
+            </Button>
+            <Button variant="contained" onClick={applyFilters}>
+              Apply
+            </Button>
+          </Box>
         </Box>
       </CardComponent>
 
@@ -207,7 +351,7 @@ const ProjectComponent = () => {
                   onChange={handleInputChange}
                 />
               </Grid2>
-              {/* Add other form fields as needed */}
+              {/* Add additional form fields as needed */}
             </Grid2>
           </Box>
         </DialogContent>

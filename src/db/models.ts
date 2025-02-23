@@ -164,7 +164,7 @@ import data from "../db.json";
 
 export const db = {
   async getProjects(): Promise<Project[]> {
-    const query = 'SELECT * FROM projects';
+    const query = "SELECT * FROM projects";
     return await pool.query(query);
   },
 
@@ -178,7 +178,7 @@ export const db = {
       ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
       RETURNING *
     `;
-    
+
     const values = [
       projectData.name,
       projectData.project_identifier,
@@ -194,7 +194,7 @@ export const db = {
       projectData.avg_annual_emission_reduction,
       projectData.crediting_period,
       projectData.project_developer,
-      projectData.registry
+      projectData.registry,
     ];
 
     const result = await pool.query(query, values);
@@ -208,13 +208,13 @@ export const db = {
       ) VALUES ($1, $2, $3, $4, ST_GeomFromGeoJSON($5))
       RETURNING *
     `;
-    
+
     const values = [
       siteData.project_id,
       siteData.name,
       siteData.type,
       siteData.area,
-      siteData.boundary
+      siteData.boundary,
     ];
 
     const result = await pool.query(query, values);
@@ -222,8 +222,13 @@ export const db = {
   },
 
   async getProjectById(id: number): Promise<Project> {
-    return data.ProjectList.find((p: Project) => p.id === id);
-  },
+    const project = data.ProjectList.find((p: Project) => p.id === id);
+    if (!project) {
+      throw new Error("Project not found");
+    }
+    return project;
+  }
+
 
   async getSites(): Promise<Site[]> {
     // Assumes the first project's sites represent sample data.
