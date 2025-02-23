@@ -28,4 +28,4 @@ author = 39619357
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run dev & ts-node src/server.ts"
+args = "npm run start & npx ts-node src/server.ts"
