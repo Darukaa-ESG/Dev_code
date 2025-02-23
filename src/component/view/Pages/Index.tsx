@@ -8,6 +8,7 @@ import {
   Snackbar,
   Grid2,
   TextField,
+  MenuItem,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -39,6 +40,7 @@ const ProjectComponent = () => {
     registry: "",
   });
   const [siteFile, setSiteFile] = useState<File | null>(null);
+  const [filters, setFilters] = useState({ name: '', status: '', type: '' }); // Added filters state
 
   useEffect(() => {
     fetchProjects();
@@ -78,6 +80,10 @@ const ProjectComponent = () => {
     }
   };
 
+  const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFilters({ ...filters, [e.target.name]: e.target.value });
+  }; // Added filter handler
+
   const handleSubmit = async () => {
     const formData = new FormData();
     formData.append("projectData", JSON.stringify(projectData));
@@ -114,7 +120,54 @@ const ProjectComponent = () => {
       </Box>
 
       <CardComponent title="Project Filter">
-        {/* Filter content can be added here */}
+        <Box sx={{ p: 2 }}>
+          <Grid2 container spacing={2}>
+            <Grid2 xs={12} md={4}>
+              <TextField
+                fullWidth
+                name="name"
+                label="Search by Name"
+                variant="outlined"
+                size="small"
+                value={filters.name}
+                onChange={handleFilterChange}
+              />
+            </Grid2>
+            <Grid2 xs={12} md={4}>
+              <TextField
+                select
+                fullWidth
+                name="status"
+                label="Project Status"
+                variant="outlined"
+                size="small"
+                value={filters.status}
+                onChange={handleFilterChange}
+              >
+                <MenuItem value="">All</MenuItem>
+                <MenuItem value="Under development">Under development</MenuItem>
+                <MenuItem value="Registered">Registered</MenuItem>
+                <MenuItem value="In Progress">In Progress</MenuItem>
+              </TextField>
+            </Grid2>
+            <Grid2 xs={12} md={4}>
+              <TextField
+                select
+                fullWidth
+                name="type"
+                label="Project Type"
+                variant="outlined"
+                size="small"
+                value={filters.type}
+                onChange={handleFilterChange}
+              >
+                <MenuItem value="">All</MenuItem>
+                <MenuItem value="ARR/WRC">ARR/WRC</MenuItem>
+                <MenuItem value="Conservation">Conservation</MenuItem>
+              </TextField>
+            </Grid2>
+          </Grid2>
+        </Box>
       </CardComponent>
 
       <Box mt={3}>
