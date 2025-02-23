@@ -1,5 +1,5 @@
 
-import { spawn } from 'child_process';
+const { spawn } = require('child_process');
 
 // Start the React development server
 const frontend = spawn('npm', ['start'], {
@@ -8,7 +8,7 @@ const frontend = spawn('npm', ['start'], {
 });
 
 // Start the backend server
-const backend = spawn('ts-node', ['src/server.ts'], {
+const backend = spawn('node', ['src/server.ts'], {
   stdio: 'inherit',
   shell: true
 });
