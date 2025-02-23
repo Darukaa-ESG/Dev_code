@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { db } from '../../../../db/models';
+import React, { useState } from 'react'
 import Grid from '@mui/material/Grid2';
 import { Box, Typography } from '@mui/material';
+import ProjectListData from '../../../../db.json';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import DMapDashBoard from '../DMap/DMapDashboard';
@@ -17,27 +17,7 @@ import { Site } from '../../../../Interface/Index';
 import { ProjectInfoCard, ProjectSitesCarousel } from '../../../common/cardComponent';
 
 const CarbonDashboard = () => {
-    const [projectCarbon, setProjectCarbon] = useState<any>(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            const project = await db.getProjects();
-            if (project && project.length > 0) {
-                const carbonMetrics = await db.getCarbonMetrics(project[0].id);
-                const sites = await db.getSitesByProjectId(project[0].id);
-                setProjectCarbon([{
-                    ...project[0],
-                    ...carbonMetrics,
-                    sites
-                }]);
-            }
-        };
-        fetchData();
-    }, []);
-
-    if (!projectCarbon) {
-        return <div>Loading...</div>;
-    }
+    const [projectCarbon] = useState(ProjectListData.CarbonCredit);
 
     const filterGHGReductionData = projectCarbon[0]["estimated_ghg_emissions_removals"]
 
