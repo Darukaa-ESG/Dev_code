@@ -6,16 +6,20 @@ const router = express.Router();
 const upload = multer({ dest: "uploads/" });
 
 const pool = new Pool({
-  user: "postgres",
-  host: "0.0.0.0",
-  database: "postgres",
-  password: "postgres",
-  port: 5432,
+  user: process.env.REPLIT_DB_USER || "postgres",
+  host: process.env.REPLIT_DB_HOST || "0.0.0.0",
+  database: process.env.REPLIT_DB_NAME || "postgres",
+  password: process.env.REPLIT_DB_PASSWORD || "postgres",
+  port: parseInt(process.env.REPLIT_DB_PORT || "5432"),
+  ssl: process.env.NODE_ENV === "production"
 });
 
 router.get("/", async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM projects");
+    const result = await pool.query("SELECT * FROM projects ORDER BY id DESC");
+    if (!result.rows) {
+      return res.json([]);
+    }
     res.json(result.rows);
   } catch (error) {
     console.error("Database error:", error);
