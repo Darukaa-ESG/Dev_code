@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import ProjectListData from '../../../../db.json';
+import React, { useState, useEffect } from 'react'
+import { db } from '../../../../db/models';
 import Grid from '@mui/material/Grid2';
 import { Box, Typography } from '@mui/material';
 import 'swiper/css';
@@ -17,8 +17,29 @@ import { Site } from '../../../../Interface/Index';
 import { ProjectInfoCard, ProjectSitesCarousel } from '../../../common/cardComponent';
 
 const CarbonDashboard = () => {
-    const [projectCarbon] = useState(ProjectListData.CarbonCredit);
-    const filterGHGReductionData = projectCarbon[0]["estimated_ghg_emissions_removal/reductions"]
+    const [projectCarbon, setProjectCarbon] = useState<any>(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const project = await db.getProjects();
+            if (project && project.length > 0) {
+                const carbonMetrics = await db.getCarbonMetrics(project[0].id);
+                const sites = await db.getSitesByProjectId(project[0].id);
+                setProjectCarbon([{
+                    ...project[0],
+                    ...carbonMetrics,
+                    sites
+                }]);
+            }
+        };
+        fetchData();
+    }, []);
+
+    if (!projectCarbon) {
+        return <div>Loading...</div>;
+    }
+
+    const filterGHGReductionData = projectCarbon[0]["estimated_ghg_emissions_removals"]
 
     const transformedData = Object.entries(filterGHGReductionData)
         .filter(([key]) => key !== "unit")
@@ -55,7 +76,7 @@ const CarbonDashboard = () => {
                         imageSrc={ProjectOverview}
                         title="Project Details"
                         data={[
-                            { label: "Project Id", value: projectCarbon[0]?.project_id },
+                            { label: "Project Id", value: projectCarbon[0]?.id },
                             { label: "Total Area", value: `${projectCarbon[0]?.total_area} ${projectCarbon[0]?.total_area_unit}` },
                             { label: "Total Sites", value: projectCarbon[0]?.number_of_sites },
                         ]}
