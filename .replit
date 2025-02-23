@@ -10,3 +10,14 @@ run = ["sh", "-c", "npm run start"]
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[workflows]
+runButton = "Start"
+
+[[workflows.workflow]]
+name = "Start"
+author = 39619357
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "ts-node src/start.ts"
