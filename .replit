@@ -20,4 +20,4 @@ author = 39619357
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "node -r ts-node/register src/start.ts"
+args = "npx ts-node src/start.ts"
