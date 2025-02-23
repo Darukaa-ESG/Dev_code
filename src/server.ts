@@ -1,19 +1,11 @@
 import express from "express";
 import cors from "cors";
-import { Pool } from "pg";
+import pool from "./db/config";
 import path from "path";
 
 const app = express();
 const port = process.env.PORT || 3001;
 
-// Configure PostgreSQL connection
-const pool = new Pool({
-  user: "postgres", 
-  host: "0.0.0.0",
-  database: "postgres",
-  password: "postgres",
-  port: 5432
-});
 
 // Middleware
 app.use(cors());

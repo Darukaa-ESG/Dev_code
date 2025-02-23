@@ -1,18 +1,9 @@
 import express from "express";
 import multer from "multer";
-import { Pool } from "pg";
+import pool from "../db/config";
 
 const router = express.Router();
 const upload = multer({ dest: "uploads/" });
-
-const pool = new Pool({
-  user: process.env.REPLIT_DB_USER || "postgres",
-  host: process.env.REPLIT_DB_HOST || "0.0.0.0",
-  database: process.env.REPLIT_DB_NAME || "postgres",
-  password: process.env.REPLIT_DB_PASSWORD || "postgres",
-  port: parseInt(process.env.REPLIT_DB_PORT || "5432"),
-  ssl: process.env.NODE_ENV === "production"
-});
 
 router.get("/", async (req, res) => {
   try {
