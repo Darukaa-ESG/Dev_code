@@ -26,28 +26,19 @@ const ProjectComponent = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [projectData, setProjectData] = useState({
     name: "",
-    project_identifier: "",
     start_date: "",
     end_date: "",
     status: "",
     country: "",
     description: "",
     project_type: "",
-    total_area: "",
-    emission_reduction_unit: "",
-    total_emission_reduction: "",
-    avg_annual_emission_reduction: "",
-    crediting_period: "",
-    project_developer: "",
-    registry: "",
+    number_of_sites: 1
   });
-  const [siteData, setSiteData] = useState({
+  const [sitesData, setSitesData] = useState([{
     name: "",
     type: "",
-    area: "",
-    cameras_installed: "",
-    audio_devices: "",
-  });
+    boundaryFile: null
+  }]);
   const [siteFile, setSiteFile] = useState<File | null>(null);
   const [boundaryFile, setBoundaryFile] = useState<File | null>(null);
 
@@ -207,17 +198,48 @@ const ProjectComponent = () => {
     setProjects(transformedData);
   };
 
+  const handleSitesNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newNumber = parseInt(e.target.value);
+    setProjectData({ ...projectData, number_of_sites: newNumber });
+    
+    // Adjust sites array length
+    const newSitesData = [...sitesData];
+    if (newNumber > sitesData.length) {
+      for (let i = sitesData.length; i < newNumber; i++) {
+        newSitesData.push({ name: "", type: "", boundaryFile: null });
+      }
+    } else {
+      newSitesData.splice(newNumber);
+    }
+    setSitesData(newSitesData);
+  };
+
+  const handleSiteInputChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+    const { name, value } = e.target;
+    const newSitesData = [...sitesData];
+    newSitesData[index] = { ...newSitesData[index], [name]: value };
+    setSitesData(newSitesData);
+  };
+
+  const handleBoundaryFileChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+    if (e.target.files && e.target.files[0]) {
+      const newSitesData = [...sitesData];
+      newSitesData[index] = { ...newSitesData[index], boundaryFile: e.target.files[0] };
+      setSitesData(newSitesData);
+    }
+  };
+
   const handleSubmit = async () => {
     const formData = new FormData();
     formData.append("projectData", JSON.stringify(projectData));
-    formData.append("siteData", JSON.stringify(siteData));
+    formData.append("sitesData", JSON.stringify(sitesData));
 
-    if (siteFile) {
-      formData.append("siteFile", siteFile);
-    }
-    if (boundaryFile) {
-      formData.append("boundaryFile", boundaryFile);
-    }
+    // Append boundary files
+    sitesData.forEach((site, index) => {
+      if (site.boundaryFile) {
+        formData.append("boundaryFiles", site.boundaryFile);
+      }
+    });
 
     try {
       const response = await fetch("/api/projects", {
@@ -386,9 +408,10 @@ const ProjectComponent = () => {
         <DialogContent>
           <Box component="form" sx={{ mt: 2 }}>
             <Grid2 container spacing={2}>
-              <Grid2 xs={6}>
+              <Grid2 xs={12}>
                 <TextField
                   fullWidth
+                  required
                   name="name"
                   label="Project Name"
                   value={projectData.name}
@@ -398,47 +421,140 @@ const ProjectComponent = () => {
               <Grid2 xs={6}>
                 <TextField
                   fullWidth
-                  name="project_identifier"
-                  label="Project Identifier"
-                  value={projectData.project_identifier}
+                  required
+                  type="date"
+                  name="start_date"
+                  label="Start Date"
+                  InputLabelProps={{ shrink: true }}
+                  value={projectData.start_date}
                   onChange={handleInputChange}
                 />
               </Grid2>
               <Grid2 xs={6}>
                 <TextField
                   fullWidth
-                  name="name"
-                  label="Site Name"
-                  value={siteData.name}
-                  onChange={handleSiteInputChange}
+                  required
+                  type="date"
+                  name="end_date"
+                  label="End Date"
+                  InputLabelProps={{ shrink: true }}
+                  value={projectData.end_date}
+                  onChange={handleInputChange}
                 />
+              </Grid2>
+              <Grid2 xs={6}>
+                <TextField
+                  select
+                  fullWidth
+                  required
+                  name="status"
+                  label="Project Status"
+                  value={projectData.status}
+                  onChange={handleInputChange}
+                >
+                  <MenuItem value="Under development">Under development</MenuItem>
+                  <MenuItem value="Under validation">Under validation</MenuItem>
+                  <MenuItem value="Registered">Registered</MenuItem>
+                </TextField>
               </Grid2>
               <Grid2 xs={6}>
                 <TextField
                   fullWidth
-                  name="type"
-                  label="Site Type"
-                  value={siteData.type}
-                  onChange={handleSiteInputChange}
+                  required
+                  name="country"
+                  label="Country"
+                  value={projectData.country}
+                  onChange={handleInputChange}
                 />
               </Grid2>
-              {/* Add more site data fields as needed */}
+              <Grid2 xs={12}>
+                <TextField
+                  fullWidth
+                  multiline
+                  rows={3}
+                  name="description"
+                  label="Description"
+                  value={projectData.description}
+                  onChange={handleInputChange}
+                />
+              </Grid2>
               <Grid2 xs={6}>
                 <TextField
-                  type="file"
-                  name="siteFile"
-                  onChange={handleFileChange}
-                />
+                  select
+                  fullWidth
+                  required
+                  name="project_type"
+                  label="Project Type"
+                  value={projectData.project_type}
+                  onChange={handleInputChange}
+                >
+                  <MenuItem value="ARR/WRC">ARR/WRC</MenuItem>
+                  <MenuItem value="Physical VAR">Physical VAR</MenuItem>
+                </TextField>
               </Grid2>
               <Grid2 xs={6}>
                 <TextField
-                  type="file"
-                  name="boundaryFile"
-                  onChange={handleBoundaryFileChange}
+                  fullWidth
+                  required
+                  type="number"
+                  name="number_of_sites"
+                  label="Number of Sites"
+                  value={projectData.number_of_sites}
+                  onChange={handleSitesNumberChange}
+                  InputProps={{ inputProps: { min: 1 } }}
                 />
               </Grid2>
-              {/* Add additional form fields as needed */}
             </Grid2>
+
+            <Typography variant="h6" sx={{ mt: 4, mb: 2 }}>Site Information</Typography>
+            
+            {sitesData.map((site, index) => (
+              <Box key={index} sx={{ mb: 4 }}>
+                <Typography variant="subtitle1" sx={{ mb: 2 }}>Site {index + 1}</Typography>
+                <Grid2 container spacing={2}>
+                  <Grid2 xs={4}>
+                    <TextField
+                      fullWidth
+                      required
+                      name="name"
+                      label="Site Name"
+                      value={site.name}
+                      onChange={(e) => handleSiteInputChange(e, index)}
+                    />
+                  </Grid2>
+                  <Grid2 xs={4}>
+                    <TextField
+                      select
+                      fullWidth
+                      required
+                      name="type"
+                      label="Site Type"
+                      value={site.type}
+                      onChange={(e) => handleSiteInputChange(e, index)}
+                    >
+                      <MenuItem value="Restoration">Restoration</MenuItem>
+                      <MenuItem value="Conservation">Conservation</MenuItem>
+                      <MenuItem value="VAR assessment">VAR assessment</MenuItem>
+                    </TextField>
+                  </Grid2>
+                  <Grid2 xs={4}>
+                    <TextField
+                      type="file"
+                      fullWidth
+                      required
+                      name="boundaryFile"
+                      onChange={(e) => handleBoundaryFileChange(e, index)}
+                      helperText="Upload .shp or .geojson file"
+                      InputProps={{
+                        inputProps: {
+                          accept: ".shp,.geojson"
+                        }
+                      }}
+                    />
+                  </Grid2>
+                </Grid2>
+              </Box>
+            ))}
           </Box>
         </DialogContent>
         <DialogActions>
