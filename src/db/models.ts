@@ -1,6 +1,5 @@
 
-import { Pool } from 'pg';
-
+// Database types and interfaces
 export interface Project {
   id: number;
   name: string;
@@ -65,62 +64,52 @@ export interface Site {
   human_activity_trend: any;
 }
 
-const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: parseInt(process.env.DB_PORT || '5432'),
-});
+// Import data from local JSON for now
+import data from '../../db.json';
 
 export const db = {
   async getProjects(): Promise<Project[]> {
-    const result = await pool.query('SELECT * FROM projects');
-    return result.rows;
+    return data.ProjectList;
   },
 
   async getProjectById(id: number): Promise<Project> {
-    const result = await pool.query('SELECT * FROM projects WHERE id = $1', [id]);
-    return result.rows[0];
+    return data.ProjectList.find((p: Project) => p.id === id);
   },
 
   async getSites(): Promise<Site[]> {
-    const result = await pool.query('SELECT * FROM sites');
-    return result.rows;
+    return data.ProjectList[0].sites;
   },
 
   async getSitesByProjectId(projectId: number): Promise<Site[]> {
-    const result = await pool.query('SELECT * FROM sites WHERE project_id = $1', [projectId]);
-    return result.rows;
+    const project = data.ProjectList.find((p: any) => p.id === projectId);
+    return project ? project.sites : [];
   },
 
   async getSiteById(id: number): Promise<Site> {
-    const result = await pool.query('SELECT * FROM sites WHERE id = $1', [id]);
-    return result.rows[0];
+    for (const project of data.ProjectList) {
+      const site = project.sites.find((s: Site) => s.id === id);
+      if (site) return site;
+    }
+    return null;
   },
 
   async getCarbonMetrics(projectId: number) {
-    const result = await pool.query('SELECT * FROM carbon_project_metrics WHERE project_id = $1', [projectId]);
-    return result.rows[0];
+    return data.CarbonCredit.find((p: any) => p.id === projectId);
   },
 
   async getCarbonSiteMetrics(siteId: number) {
-    const result = await pool.query('SELECT * FROM carbon_site_metrics WHERE site_id = $1', [siteId]);
-    return result.rows[0];
+    return data.CarbonCredit[0].sites.find((s: any) => s.id === siteId);
   },
 
   async getBiodiversityMetrics(projectId: number) {
-    const result = await pool.query('SELECT * FROM biodiversity_project_metrics WHERE project_id = $1', [projectId]);
-    return result.rows[0];
+    return data.ProjectSite[0][0];
   },
 
   async getCarbonCredits(projectId: number) {
-    const result = await pool.query('SELECT * FROM carbon_credits WHERE project_id = $1', [projectId]);
-    return result.rows[0];
+    return data.CarbonCredit[0].credits;
   },
 
   async getBiodiversityCredits(projectId: number) {
-    const result = await pool.query('SELECT * FROM biodiversity_credits WHERE project_id = $1', [projectId]);
-    return result.rows[0];
+    return data.ProjectSite[0][0].credits;
   }
 };
