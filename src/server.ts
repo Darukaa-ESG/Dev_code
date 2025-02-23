@@ -23,6 +23,9 @@ app.use(express.json());
 app.get("/api/projects", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM projects");
+    if (!result.rows) {
+      return res.json([]);
+    }
     res.json(result.rows);
   } catch (error) {
     console.error("Database error:", error);
