@@ -33,13 +33,15 @@ const ProjectComponent = () => {
     country: "",
     description: "",
     project_type: "",
-    number_of_sites: 1
+    number_of_sites: 1,
   });
-  const [sitesData, setSitesData] = useState([{
-    name: "",
-    type: "",
-    boundaryFile: null
-  }]);
+  const [sitesData, setSitesData] = useState([
+    {
+      name: "",
+      type: "",
+      boundaryFile: null,
+    },
+  ]);
   const [siteFile, setSiteFile] = useState<File | null>(null);
   const [boundaryFile, setBoundaryFile] = useState<File | null>(null);
 
@@ -120,16 +122,9 @@ const ProjectComponent = () => {
     });
   };
 
-
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setSiteFile(e.target.files[0]);
-    }
-  };
-
-  const handleBoundaryFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setBoundaryFile(e.target.files[0]);
     }
   };
 
@@ -209,17 +204,26 @@ const ProjectComponent = () => {
     setSitesData(newSitesData);
   };
 
-  const handleSiteInputChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+  const handleSiteInputChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    index: number,
+  ) => {
     const { name, value } = e.target;
     const newSitesData = [...sitesData];
     newSitesData[index] = { ...newSitesData[index], [name]: value };
     setSitesData(newSitesData);
   };
 
-  const handleBoundaryFileChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
+  const handleBoundaryFileChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    index: number,
+  ) => {
     if (e.target.files && e.target.files[0]) {
       const newSitesData = [...sitesData];
-      newSitesData[index] = { ...newSitesData[index], boundaryFile: e.target.files[0] };
+      newSitesData[index] = {
+        ...newSitesData[index],
+        boundaryFile: e.target.files[0],
+      };
       setSitesData(newSitesData);
     }
   };
@@ -237,10 +241,13 @@ const ProjectComponent = () => {
     });
 
     try {
-      const response = await fetch("/api/projects", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev:3001/api/projects",
+        {
+          method: "POST",
+          body: formData,
+        },
+      );
 
       if (response.ok) {
         setOpenDialog(false);
@@ -447,7 +454,9 @@ const ProjectComponent = () => {
                   value={projectData.status}
                   onChange={handleInputChange}
                 >
-                  <MenuItem value="Under development">Under development</MenuItem>
+                  <MenuItem value="Under development">
+                    Under development
+                  </MenuItem>
                   <MenuItem value="Under validation">Under validation</MenuItem>
                   <MenuItem value="Registered">Registered</MenuItem>
                 </TextField>
@@ -501,11 +510,15 @@ const ProjectComponent = () => {
               </Grid2>
             </Grid2>
 
-            <Typography variant="h6" sx={{ mt: 4, mb: 2 }}>Site Information</Typography>
+            <Typography variant="h6" sx={{ mt: 4, mb: 2 }}>
+              Site Information
+            </Typography>
 
             {sitesData.map((site, index) => (
               <Box key={index} sx={{ mb: 4 }}>
-                <Typography variant="subtitle1" sx={{ mb: 2 }}>Site {index + 1}</Typography>
+                <Typography variant="subtitle1" sx={{ mb: 2 }}>
+                  Site {index + 1}
+                </Typography>
                 <Grid2 container spacing={2}>
                   <Grid2 xs={4}>
                     <TextField
@@ -542,8 +555,8 @@ const ProjectComponent = () => {
                       helperText="Upload .shp or .geojson file"
                       InputProps={{
                         inputProps: {
-                          accept: ".shp,.geojson"
-                        }
+                          accept: ".shp,.geojson",
+                        },
                       }}
                     />
                   </Grid2>
