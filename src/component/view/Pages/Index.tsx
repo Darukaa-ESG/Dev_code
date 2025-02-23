@@ -53,8 +53,8 @@ const ProjectComponent = () => {
       const transformedData = data.map((project: any) => ({
         name: project.name,
         status: project.status,
-        start: new Date(project.start_date).toLocaleDateString(),
-        end: new Date(project.end_date).toLocaleDateString(),
+        start: project.project_start_date ? new Date(project.project_start_date).toLocaleDateString() : 'N/A',
+        end: project.project_end_date ? new Date(project.project_end_date).toLocaleDateString() : 'N/A',
         type: project.project_type,
         country: project.country,
       }));
