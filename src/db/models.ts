@@ -65,7 +65,7 @@ export interface Site {
 }
 
 // Import data from local JSON for now
-import data from '../../db.json';
+import data from '../db.json';
 
 export const db = {
   async getProjects(): Promise<Project[]> {
