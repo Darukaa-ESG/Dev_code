@@ -7,14 +7,24 @@ const upload = multer({ dest: "uploads/" });
 
 router.get("/", async (req, res) => {
   try {
+    console.log("Attempting to fetch projects from database...");
     const result = await pool.query("SELECT * FROM projects ORDER BY id DESC");
+    console.log("Query result:", result);
     if (!result.rows) {
+      console.log("No rows returned from query");
       return res.json([]);
     }
+    console.log(`Found ${result.rows.length} projects`);
     res.json(result.rows);
   } catch (error) {
-    console.error("Database error:", error);
-    res.status(500).json({ error: "Failed to fetch projects" });
+    console.error("Database error details:", {
+      message: error.message,
+      code: error.code,
+      stack: error.stack,
+    });
+    res
+      .status(500)
+      .json({ error: "Failed to fetch projects", details: error.message });
   }
 });
 
@@ -39,7 +49,7 @@ router.post("/", upload.single("siteFile"), async (req, res) => {
         projectData.crediting_period,
         projectData.project_developer,
         projectData.registry,
-      ]
+      ],
     );
 
     res.status(201).json(result.rows[0]);
