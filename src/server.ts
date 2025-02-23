@@ -8,7 +8,12 @@ const port = process.env.PORT || 3001;
 const upload = multer({ dest: "uploads/" });
 
 // Configure CORS
-app.use(cors());
+app.use(cors({
+  origin: process.env.REPLIT_ENVIRONMENT === 'production' 
+    ? process.env.REPLIT_URL 
+    : 'https://03468663-6433-430b-8857-35337fcb58bc-00-3a34n9zkvcp0f.kirk.replit.dev',
+  credentials: true
+}));
 app.use(express.json());
 
 // Database connection
