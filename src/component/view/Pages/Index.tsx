@@ -41,7 +41,15 @@ const ProjectComponent = () => {
     project_developer: "",
     registry: "",
   });
+  const [siteData, setSiteData] = useState({
+    name: "",
+    type: "",
+    area: "",
+    cameras_installed: "",
+    audio_devices: "",
+  });
   const [siteFile, setSiteFile] = useState<File | null>(null);
+  const [boundaryFile, setBoundaryFile] = useState<File | null>(null);
 
   // Filter state – these are the currently selected filter values.
   const [selectedProject, setSelectedProject] = useState("");
@@ -120,9 +128,22 @@ const ProjectComponent = () => {
     });
   };
 
+  const handleSiteInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSiteData({
+      ...siteData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setSiteFile(e.target.files[0]);
+    }
+  };
+
+  const handleBoundaryFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setBoundaryFile(e.target.files[0]);
     }
   };
 
@@ -189,8 +210,13 @@ const ProjectComponent = () => {
   const handleSubmit = async () => {
     const formData = new FormData();
     formData.append("projectData", JSON.stringify(projectData));
+    formData.append("siteData", JSON.stringify(siteData));
+
     if (siteFile) {
       formData.append("siteFile", siteFile);
+    }
+    if (boundaryFile) {
+      formData.append("boundaryFile", boundaryFile);
     }
 
     try {
@@ -202,7 +228,34 @@ const ProjectComponent = () => {
       if (response.ok) {
         setOpenDialog(false);
         setSnackbarOpen(true);
-        fetchProjects(); // Refresh the projects list (and filter options) after adding a new project.
+        // Reset form data
+        setProjectData({
+          name: "",
+          project_identifier: "",
+          start_date: "",
+          end_date: "",
+          status: "",
+          country: "",
+          description: "",
+          project_type: "",
+          total_area: "",
+          emission_reduction_unit: "",
+          total_emission_reduction: "",
+          avg_annual_emission_reduction: "",
+          crediting_period: "",
+          project_developer: "",
+          registry: "",
+        });
+        setSiteData({
+          name: "",
+          type: "",
+          area: "",
+          cameras_installed: "",
+          audio_devices: "",
+        });
+        setSiteFile(null);
+        setBoundaryFile(null);
+        fetchProjects();
       }
     } catch (error) {
       console.error("Error creating project:", error);
@@ -349,6 +402,39 @@ const ProjectComponent = () => {
                   label="Project Identifier"
                   value={projectData.project_identifier}
                   onChange={handleInputChange}
+                />
+              </Grid2>
+              <Grid2 xs={6}>
+                <TextField
+                  fullWidth
+                  name="name"
+                  label="Site Name"
+                  value={siteData.name}
+                  onChange={handleSiteInputChange}
+                />
+              </Grid2>
+              <Grid2 xs={6}>
+                <TextField
+                  fullWidth
+                  name="type"
+                  label="Site Type"
+                  value={siteData.type}
+                  onChange={handleSiteInputChange}
+                />
+              </Grid2>
+              {/* Add more site data fields as needed */}
+              <Grid2 xs={6}>
+                <TextField
+                  type="file"
+                  name="siteFile"
+                  onChange={handleFileChange}
+                />
+              </Grid2>
+              <Grid2 xs={6}>
+                <TextField
+                  type="file"
+                  name="boundaryFile"
+                  onChange={handleBoundaryFileChange}
                 />
               </Grid2>
               {/* Add additional form fields as needed */}
