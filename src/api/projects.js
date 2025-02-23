@@ -1,4 +1,3 @@
-
 import express from "express";
 import multer from "multer";
 import pool from "../db/config.js";
@@ -50,7 +49,7 @@ router.post("/", upload.single("siteFile"), async (req, res) => {
         projectData.crediting_period,
         projectData.project_developer,
         projectData.registry,
-      ]
+      ],
     );
     res.status(201).json(result.rows[0]);
   } catch (error) {
