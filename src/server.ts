@@ -6,21 +6,32 @@ import path from "path";
 const app = express();
 const port = process.env.PORT || 3001;
 
-
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // API Routes
 import projectsRouter from "./api/projects";
+// Add logging middleware
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
 app.use("/api/projects", projectsRouter);
+
+// Test endpoint
+app.get("/api/test", (req, res) => {
+  console.log("Test endpoint hit");
+  res.json({ message: "API is working" });
+});
 
 // Serve static files
 app.use(express.static(path.join(__dirname, "../build")));
 
 // Catch-all route for React app
 app.get("*", (req, res) => {
-  if (!req.path.startsWith('/api/')) {
+  if (!req.path.startsWith("/api/")) {
     res.sendFile(path.join(__dirname, "../build", "index.html"));
   }
 });
