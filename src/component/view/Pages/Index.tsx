@@ -9,6 +9,7 @@ import {
   Grid2,
   TextField,
   MenuItem,
+  Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -119,12 +120,6 @@ const ProjectComponent = () => {
     });
   };
 
-  const handleSiteInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSiteData({
-      ...siteData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
@@ -201,7 +196,7 @@ const ProjectComponent = () => {
   const handleSitesNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newNumber = parseInt(e.target.value);
     setProjectData({ ...projectData, number_of_sites: newNumber });
-    
+
     // Adjust sites array length
     const newSitesData = [...sitesData];
     if (newNumber > sitesData.length) {
@@ -507,7 +502,7 @@ const ProjectComponent = () => {
             </Grid2>
 
             <Typography variant="h6" sx={{ mt: 4, mb: 2 }}>Site Information</Typography>
-            
+
             {sitesData.map((site, index) => (
               <Box key={index} sx={{ mb: 4 }}>
                 <Typography variant="subtitle1" sx={{ mb: 2 }}>Site {index + 1}</Typography>
