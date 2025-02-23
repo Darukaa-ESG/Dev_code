@@ -12,7 +12,7 @@ localPort = 3000
 externalPort = 80
 
 [workflows]
-runButton = "Start"
+runButton = "dev"
 
 [[workflows.workflow]]
 name = "Start"
@@ -21,3 +21,11 @@ author = 39619357
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npx ts-node src/start.ts"
+
+[[workflows.workflow]]
+name = "dev"
+author = 39619357
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev & ts-node src/server.ts"
