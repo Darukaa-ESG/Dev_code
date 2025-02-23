@@ -2,13 +2,13 @@
 const { spawn } = require('child_process');
 
 // Start the React development server
-const frontend = spawn('npm', ['start'], {
+const frontend = spawn('react-scripts', ['start'], {
   stdio: 'inherit',
   shell: true
 });
 
-// Start the backend server
-const backend = spawn('node', ['src/server.ts'], {
+// Start the backend server using ts-node
+const backend = spawn('ts-node', ['--transpile-only', 'src/server.ts'], {
   stdio: 'inherit',
   shell: true
 });
