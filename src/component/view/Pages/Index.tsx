@@ -270,13 +270,13 @@ const ProjectComponent = () => {
           project_developer: "",
           registry: "",
         });
-        setSiteData({
-          name: "",
-          type: "",
-          area: "",
-          cameras_installed: "",
-          audio_devices: "",
-        });
+        setSitesData([
+          {
+            name: "",
+            type: "",
+            boundaryFile: null,
+          },
+        ]);
         setSiteFile(null);
         setBoundaryFile(null);
         fetchProjects();
@@ -550,7 +550,7 @@ const ProjectComponent = () => {
                       type="file"
                       fullWidth
                       required
-                      name="boundaryFile"
+                      name="boundaryFiles"
                       onChange={(e) => handleBoundaryFileChange(e, index)}
                       helperText="Upload .shp or .geojson file"
                       InputProps={{
