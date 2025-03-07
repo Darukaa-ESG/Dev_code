@@ -552,10 +552,10 @@ const ProjectComponent = () => {
                       required
                       name="boundaryFiles"
                       onChange={(e) => handleBoundaryFileChange(e, index)}
-                      helperText="Upload .shp or .geojson file"
+                      helperText="Upload .geojson file or zipped shapefile (.zip containing .shp, .shx, .dbf, etc.)"
                       InputProps={{
                         inputProps: {
-                          accept: ".shp,.geojson",
+                          accept: ".geojson,.json,.zip",
                         },
                       }}
                     />
