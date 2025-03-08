@@ -5,12 +5,14 @@ import { fileURLToPath } from "url";
 import path from "path";
 import fs from "fs/promises";
 import shp from "shpjs";
-import JSZip from "jszip";
 import { createReadStream } from "fs";
 import unzipper from "unzipper";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Debug: log the type of shp to verify it's a function.
+console.log("Type of shp:", typeof shp);
 
 const router = express.Router();
 const storage = multer.diskStorage({
@@ -53,20 +55,16 @@ router.get("/", async (req, res) => {
 router.post("/", upload.array("boundaryFiles"), async (req, res) => {
   console.log("Request body:", req.body);
   console.log("Uploaded files:", req.files);
-
   try {
     if (!req.body.projectData || !req.body.sitesData) {
       return res
         .status(400)
         .json({ error: "Missing required data in request body" });
     }
-
     const projectData = JSON.parse(req.body.projectData);
     const sitesData = JSON.parse(req.body.sitesData);
     const files = req.files || [];
-
     await pool.query("BEGIN");
-
     // Insert project
     const projectResult = await pool.query(
       `INSERT INTO projects (
@@ -85,32 +83,23 @@ router.post("/", upload.array("boundaryFiles"), async (req, res) => {
         projectData.registry || "",
       ],
     );
-
     const projectId = projectResult.rows[0].id;
-
-    // Process and insert sites
     for (let i = 0; i < sitesData.length; i++) {
       const site = sitesData[i];
       const boundaryFile = files[i];
       let boundaryGeom = null;
-
       if (boundaryFile) {
         try {
-          // Get file extension to determine processing method
           const fileExt = path.extname(boundaryFile.path).toLowerCase();
-          
-          if (fileExt === '.geojson' || fileExt === '.json') {
-            // Process GeoJSON file
+
+          if (fileExt === ".geojson" || fileExt === ".json") {
             const fileContent = await fs.readFile(boundaryFile.path, "utf8");
             let geojson;
-
             try {
               geojson = JSON.parse(fileContent);
             } catch (jsonErr) {
               throw new Error(`Invalid GeoJSON file: ${jsonErr.message}`);
             }
-
-            // Extract geometry from GeoJSON structure
             if (
               geojson.type === "FeatureCollection" &&
               geojson.features?.length > 0
@@ -119,94 +108,44 @@ router.post("/", upload.array("boundaryFiles"), async (req, res) => {
             } else if (geojson.type === "Feature") {
               geojson = geojson.geometry;
             }
-
-            // Validate geometry type
             if (!["Polygon", "MultiPolygon"].includes(geojson.type)) {
               throw new Error(
                 `Unsupported geometry type: ${geojson.type}. Only Polygon and MultiPolygon are allowed.`,
               );
             }
-
-            // Process coordinates to remove Z values
             geojson.coordinates = deepFlattenCoordinates(geojson.coordinates);
             boundaryGeom = JSON.stringify(geojson);
-          } else if (fileExt === '.zip') {
-            // Process shapefile in zip format
-            const extractDir = path.join(__dirname, `../../uploads/extract-${Date.now()}`);
-            await fs.mkdir(extractDir, { recursive: true });
-            
+          } else if (fileExt === ".zip") {
             try {
-              // Extract zip file contents
-              await createReadStream(boundaryFile.path)
-                .pipe(unzipper.Extract({ path: extractDir }))
-                .promise();
-              
-              // Find the .shp file in the extracted directory
-              const files = await fs.readdir(extractDir);
-              const shpFile = files.find(file => file.endsWith('.shp'));
-              
-              if (!shpFile) {
-                throw new Error('No .shp file found in the zip archive');
+              // Read the entire zip file as a buffer.
+              const zipBuffer = await fs.readFile(boundaryFile.path);
+              // Ensure shp is a function before calling it.
+              if (typeof shp !== "function") {
+                throw new Error(
+                  "shp is not a function. Check your shpjs version.",
+                );
               }
-              
-              // Convert shapefile to GeoJSON
-              const shpFilePath = path.join(extractDir, shpFile);
-              const shpBuffer = await fs.readFile(shpFilePath);
-              const geojsonData = await shp.parseShp(shpBuffer);
-              
-              // Get the DBF data if available
-              const dbfFile = files.find(file => file.endsWith('.dbf'));
-              let dbfData = null;
-              if (dbfFile) {
-                const dbfBuffer = await fs.readFile(path.join(extractDir, dbfFile));
-                dbfData = await shp.parseDbf(dbfBuffer);
-              }
-              
-              // Combine the shapefile and DBF data
-              let geojson;
-              if (dbfData) {
-                geojson = shp.combine([geojsonData, dbfData]);
-              } else {
-                geojson = {
-                  type: "FeatureCollection",
-                  features: geojsonData.map(g => ({ type: "Feature", properties: {}, geometry: g }))
-                };
-              }
-              
-              // Extract first feature's geometry
-              if (geojson.features?.length > 0) {
+              let geojson = await shp(zipBuffer);
+              // If the result is a FeatureCollection, extract the first feature's geometry.
+              if (geojson.features && geojson.features.length > 0) {
                 geojson = geojson.features[0].geometry;
               }
-              
-              // Validate geometry type
               if (!["Polygon", "MultiPolygon"].includes(geojson.type)) {
                 throw new Error(
                   `Unsupported geometry type: ${geojson.type}. Only Polygon and MultiPolygon are allowed.`,
                 );
               }
-              
-              // Process coordinates to remove Z values
               geojson.coordinates = deepFlattenCoordinates(geojson.coordinates);
               boundaryGeom = JSON.stringify(geojson);
-              
-              // Clean up the extracted files
-              await fs.rm(extractDir, { recursive: true, force: true });
             } catch (zipErr) {
-              // Clean up extraction directory if it exists
-              try {
-                await fs.rm(extractDir, { recursive: true, force: true });
-              } catch (cleanupErr) {
-                console.error('Error cleaning up extracted files:', cleanupErr);
-              }
-              
               throw new Error(`Error processing shapefile: ${zipErr.message}`);
             }
           } else {
             throw new Error(
-              `Unsupported file format: ${fileExt}. Please upload a GeoJSON file or a zipped shapefile.`
+              `Unsupported file format: ${fileExt}. Please upload a GeoJSON file or a zipped shapefile.`,
             );
           }
-          
+
           console.log(`Processed boundary for site ${i + 1}`);
         } catch (err) {
           console.error(
@@ -216,7 +155,6 @@ router.post("/", upload.array("boundaryFiles"), async (req, res) => {
           throw err;
         }
       }
-
       try {
         await pool.query(
           `INSERT INTO sites (
@@ -233,20 +171,17 @@ router.post("/", upload.array("boundaryFiles"), async (req, res) => {
         throw err;
       }
     }
-
     await pool.query("COMMIT");
     res.status(201).json({ message: "Project created successfully" });
   } catch (error) {
     await pool.query("ROLLBACK");
     console.error("Project creation failed:", error);
-
     res.status(500).json({
       error: "Project creation failed",
       details: error instanceof Error ? error.message : "Unknown error",
       ...(process.env.NODE_ENV === "development" && { stack: error.stack }),
     });
   } finally {
-    // Cleanup uploaded files
     if (req.files?.length) {
       await Promise.all(
         req.files.map((file) =>

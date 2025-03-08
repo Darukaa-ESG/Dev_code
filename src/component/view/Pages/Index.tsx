@@ -11,12 +11,19 @@ import {
   MenuItem,
   Typography,
 } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { CardComponent } from "../../common/cardComponent";
 import TableComponent from "../../common/tableComponent";
 import { PROJECT_COLUMN } from "../../../constants/projectTable";
 import { ProjectRowType } from "../../../Interface/Index";
+
+// Define a type for site data.
+interface SiteData {
+  name: string;
+  type: string;
+  boundaryFile: File | null;
+}
 
 const ProjectComponent = () => {
   const navigate = useNavigate();
@@ -35,12 +42,8 @@ const ProjectComponent = () => {
     project_type: "",
     number_of_sites: 1,
   });
-  const [sitesData, setSitesData] = useState([
-    {
-      name: "",
-      type: "",
-      boundaryFile: null,
-    },
+  const [sitesData, setSitesData] = useState<SiteData[]>([
+    { name: "", type: "", boundaryFile: null },
   ]);
   const [siteFile, setSiteFile] = useState<File | null>(null);
   const [boundaryFile, setBoundaryFile] = useState<File | null>(null);
@@ -78,19 +81,19 @@ const ProjectComponent = () => {
       ) as string[];
       const registryNames = Array.from(
         new Set(data.map((p: any) => p.registry)),
-      ).sort();
+      ) as string[];
       const countryNames = Array.from(
         new Set(data.map((p: any) => p.country)),
-      ).sort();
+      ) as string[];
       const typeNames = Array.from(
         new Set(data.map((p: any) => p.project_type)),
-      ).sort();
+      ) as string[];
 
       setFilterOptions({
-        projects: projectNames,
-        registries: registryNames,
-        countries: countryNames,
-        types: typeNames,
+        projects: projectNames.sort(),
+        registries: registryNames.sort(),
+        countries: countryNames.sort(),
+        types: typeNames.sort(),
       });
 
       // Transform the API data for display in the table.
@@ -115,21 +118,21 @@ const ProjectComponent = () => {
   };
 
   // Handlers for form input changes in the Create Project dialog.
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setProjectData({
       ...projectData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setSiteFile(e.target.files[0]);
     }
   };
 
   // Handle filter dropdown changes.
-  const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFilterChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     if (name === "project") setSelectedProject(value);
     else if (name === "registry") setSelectedRegistry(value);
@@ -149,7 +152,7 @@ const ProjectComponent = () => {
     });
 
     const transformedData = filtered.map((project: any) => ({
-      id: project.id, // include id for table row keys
+      id: project.id,
       name: project.name,
       status: project.status,
       start: project.project_start_date
@@ -188,7 +191,7 @@ const ProjectComponent = () => {
     setProjects(transformedData);
   };
 
-  const handleSitesNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSitesNumberChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newNumber = parseInt(e.target.value);
     setProjectData({ ...projectData, number_of_sites: newNumber });
 
@@ -205,7 +208,7 @@ const ProjectComponent = () => {
   };
 
   const handleSiteInputChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: ChangeEvent<HTMLInputElement>,
     index: number,
   ) => {
     const { name, value } = e.target;
@@ -215,7 +218,7 @@ const ProjectComponent = () => {
   };
 
   const handleBoundaryFileChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: ChangeEvent<HTMLInputElement>,
     index: number,
   ) => {
     if (e.target.files && e.target.files[0]) {
@@ -234,7 +237,7 @@ const ProjectComponent = () => {
     formData.append("sitesData", JSON.stringify(sitesData));
 
     // Append boundary files
-    sitesData.forEach((site, index) => {
+    sitesData.forEach((site) => {
       if (site.boundaryFile) {
         formData.append("boundaryFiles", site.boundaryFile);
       }
@@ -252,31 +255,18 @@ const ProjectComponent = () => {
       if (response.ok) {
         setOpenDialog(false);
         setSnackbarOpen(true);
-        // Reset form data
+        // Reset form data to initial shape
         setProjectData({
           name: "",
-          project_identifier: "",
           start_date: "",
           end_date: "",
           status: "",
           country: "",
           description: "",
           project_type: "",
-          total_area: "",
-          emission_reduction_unit: "",
-          total_emission_reduction: "",
-          avg_annual_emission_reduction: "",
-          crediting_period: "",
-          project_developer: "",
-          registry: "",
+          number_of_sites: 1,
         });
-        setSitesData([
-          {
-            name: "",
-            type: "",
-            boundaryFile: null,
-          },
-        ]);
+        setSitesData([{ name: "", type: "", boundaryFile: null }]);
         setSiteFile(null);
         setBoundaryFile(null);
         fetchProjects();
@@ -301,7 +291,7 @@ const ProjectComponent = () => {
       <CardComponent title="Project Filter">
         <Box sx={{ p: 2 }}>
           <Grid2 container spacing={2}>
-            <Grid2 component="div" xs={12} md={3}>
+            <Grid2 xs={12} md={3}>
               <TextField
                 select
                 fullWidth
@@ -320,7 +310,7 @@ const ProjectComponent = () => {
                 ))}
               </TextField>
             </Grid2>
-            <Grid2 component="div" xs={12} md={3}>
+            <Grid2 xs={12} md={3}>
               <TextField
                 select
                 fullWidth
@@ -339,7 +329,7 @@ const ProjectComponent = () => {
                 ))}
               </TextField>
             </Grid2>
-            <Grid2 component="div" xs={12} md={3}>
+            <Grid2 xs={12} md={3}>
               <TextField
                 select
                 fullWidth
@@ -358,7 +348,7 @@ const ProjectComponent = () => {
                 ))}
               </TextField>
             </Grid2>
-            <Grid2 component="div" xs={12} md={3}>
+            <Grid2 xs={12} md={3}>
               <TextField
                 select
                 fullWidth
